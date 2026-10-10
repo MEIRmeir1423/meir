@@ -1,0 +1,2051 @@
+<!doctype html><html lang="he" dir="rtl"><head><meta charset=utf8><title>הדברים מתחילים מהאמצע</title>
+<meta name="description" content="מסע אל המבוך הפילוסופי ובחזרה. ספר מאת מאיר הסגל, מבוסס על הגותו של לודוויג ויטגנשטיין. ארבע דלתות, ארבעה חלקים של הספר.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://meirmeir1423.github.io/meir/">
+<meta property="og:title" content="הדברים מתחילים מהאמצע">
+<meta property="og:description" content="מסע אל המבוך הפילוסופי ובחזרה. ספר מאת מאיר הסגל, מבוסס על הגותו של לודוויג ויטגנשטיין.">
+<meta property="og:image" content="https://meirmeir1423.github.io/meir/og.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:locale" content="he_IL">
+<meta name="twitter:card" content="summary_large_image"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;400;700;800&family=Frank+Ruhl+Libre:wght@400;700;900&display=swap">
+<style>
+/* מתפלסף מול ארבע דלתות. הבית בלילה; כל חדר מתבהר, עד לאור היום של חלק ד'. */
+:root {
+  color-scheme: dark;
+  /* הפלטה לקוחה מהסרט: חלל כחול־ירקרק, אורות כדור הארץ, קרח החלום, ואור הבוקר של הקפה */
+  --night: #071a22;       /* החלל שבו האיש מתכופף מעל העולם */
+  --night-2: #0d2632;
+  --paper: #e9eff0;       /* לבן קר */
+  --muted: #9cb0b6;
+  --candle: #eba04c;      /* אורות הערים על הכדור, הדיסקה הכתומה */
+  --candle-soft: rgba(235, 160, 76, .18);
+  --line: rgba(233, 239, 240, .14);
+
+  --a: #6fa9c2;  /* המבוך: קרח החלום */
+  --b: #2f8a95;  /* הריפוי: טורקיז הגלקסיה */
+  --c: #d99a3e;  /* השחרור: שחר ברחוב */
+  --d: #a8713f;  /* ההתבהרות: הקפה בבוקר */
+
+  --serif: "Frank Ruhl Libre", "Frank Ruehl CLM", "David Libre", "Times New Roman", serif;
+  --sans: "Assistant", "Heebo", "Arial Hebrew", Arial, sans-serif;
+
+  --step--1: .875rem;
+  --step-0: 1.0625rem;
+  --step-1: 1.3rem;
+  --step-2: 1.7rem;
+  --step-3: clamp(2.2rem, 6vw, 3.4rem);
+  --step-4: clamp(2.6rem, 8.5vw, 5.2rem);
+  --gutter: clamp(16px, 4vw, 40px);
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; overflow-x: clip; }
+body {
+  margin: 0;
+  background: var(--night);
+  color: var(--paper);
+  font-family: var(--serif);
+  font-size: var(--step-0);
+  line-height: 1.7;
+  overflow-x: clip;
+}
+a { color: inherit; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--candle); outline-offset: 3px; border-radius: 4px; }
+h1, h2, h3 { text-wrap: balance; font-weight: 700; line-height: 1.2; margin: 0; }
+p { margin: 0; }
+.wrap { width: 100%; max-width: 980px; margin-inline: auto; padding-inline: var(--gutter); }
+.read { max-width: 40rem; }
+.ui { font-family: var(--sans); }
+.eyebrow { font-family: var(--sans); font-size: var(--step--1); letter-spacing: .06em; color: var(--muted); }
+[hidden] { display: none !important; }
+
+/* ---------- כפתורים ---------- */
+.btn {
+  display: inline-flex; align-items: center; gap: .5em;
+  font-family: var(--sans); font-weight: 700; font-size: 1rem;
+  padding: .7em 1.3em; border-radius: 999px; text-decoration: none;
+  border: 1px solid currentColor; background: transparent; cursor: pointer;
+  transition: background .2s, color .2s, transform .2s;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn-buy { background: var(--candle); color: #1d1608; border-color: var(--candle); }
+.btn-buy:hover { background: #f2cb83; }
+.btn-ghost { color: var(--paper); border-color: var(--line); }
+.btn-ghost:hover { border-color: var(--paper); }
+.link-btn {
+  background: none; border: 0; padding: 0; cursor: pointer;
+  font-family: var(--sans); font-weight: 700; font-size: .95rem;
+  color: var(--accent, var(--candle)); text-decoration: underline; text-underline-offset: 4px;
+}
+
+/* ============================================================
+   הבית
+   ============================================================ */
+.home { padding-block: clamp(28px, 6vw, 64px) 0; }
+.home-head { text-align: center; display: grid; gap: .6rem; justify-items: center; }
+.home-head h1 {
+  font-size: var(--step-4); font-weight: 900; letter-spacing: -.01em;
+  line-height: 1.02;
+}
+.home-head h1 .mid { color: var(--candle); }
+.home-head .sub { font-size: var(--step-1); color: var(--muted); }
+.opening-q {
+  margin-top: 1.4rem; font-size: var(--step-2); font-weight: 400;
+  color: var(--paper); max-width: 22ch;
+}
+
+/* הבמה: דלתות, רצפה, מתפלסף */
+.stage {
+  position: relative; margin: clamp(24px, 5vw, 48px) auto 0;
+  max-width: 760px; padding-bottom: clamp(96px, 16vw, 130px);
+}
+.stage::before { /* הרצפה: אור שנופל מהדלתות */
+  content: ""; position: absolute; inset-inline: 0; bottom: 0; height: 34%;
+  background: radial-gradient(55% 60% at 50% 0%, var(--candle-soft), transparent 75%);
+  border-top: 1px solid var(--line);
+  pointer-events: none;
+}
+.doors { position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(8px, 3vw, 34px); }
+.door-wrap { display: grid; grid-template-columns: minmax(0, 1fr); gap: .7rem; justify-items: center; text-align: center; min-width: 0; }
+.door {
+  --col: var(--candle);
+  position: relative; width: 100%; aspect-ratio: 1 / 2.05; max-width: 150px;
+  border: 0; padding: 0; cursor: pointer; background: transparent;
+  perspective: 700px;
+}
+.door .frame {
+  position: absolute; inset: 0; border-radius: 48% 48% 3px 3px / 22% 22% 3px 3px;
+  background: radial-gradient(80% 60% at 50% 70%, #fff3d6, var(--candle) 45%, #8a5a1c 100%);
+  box-shadow: 0 0 0 4px #0f2a36, 0 0 0 5px var(--line), 0 0 40px -6px var(--candle);
+  overflow: hidden;
+}
+.door .panel {
+  position: absolute; inset: 0; border-radius: inherit;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.25), transparent 18%, transparent 82%, rgba(0,0,0,.3)),
+    linear-gradient(var(--col), color-mix(in srgb, var(--col) 60%, #000));
+  transform-origin: 100% 50%; transform: rotateY(0deg);
+  transition: transform .7s cubic-bezier(.3,.7,.2,1);
+  display: grid; place-items: center;
+  border-radius: 48% 48% 3px 3px / 22% 22% 3px 3px;
+  box-shadow: inset 0 0 0 6px rgba(0,0,0,.18);
+}
+.door .panel .glyph {
+  mix-blend-mode: normal;
+  font-family: var(--serif); font-weight: 900; font-size: clamp(1.8rem, 6vw, 3.4rem);
+  color: rgba(255,255,255,.82); text-shadow: 0 2px 0 rgba(0,0,0,.25);
+}
+.door .panel::after { /* ידית */
+  content: ""; position: absolute; left: 12%; top: 55%; width: 7%; aspect-ratio: 1;
+  border-radius: 50%; background: #e9d29b; box-shadow: 0 1px 2px rgba(0,0,0,.5);
+}
+.door:hover .panel, .door:focus-visible .panel { transform: rotateY(-28deg); }
+.door.open .panel { transform: rotateY(-105deg); }
+.door.visited .frame { box-shadow: 0 0 0 4px #0f2a36, 0 0 0 5px var(--candle), 0 0 46px -4px var(--candle); }
+.door-label { display: grid; gap: .15rem; }
+.door-label { width: 100%; min-width: 0; }
+.door-label b { font-size: clamp(.8rem, 2.6vw, 1.25rem); overflow-wrap: anywhere; }
+.door-label span { font-family: var(--sans); font-size: clamp(.72rem, 2.1vw, .9rem); color: var(--muted); line-height: 1.35; }
+.door-label .seen { color: var(--candle); }
+
+.figure {
+  position: absolute; left: 50%; bottom: 0; transform: translateX(-50%);
+  width: clamp(54px, 12vw, 92px); pointer-events: none;
+  filter: drop-shadow(0 18px 18px rgba(0,0,0,.5));
+}
+.figure svg { display: block; width: 100%; height: auto; }
+.figure .fig { fill: #07070d; }
+.stage-hint { text-align: center; margin-top: 1rem; color: var(--muted); font-family: var(--sans); font-size: .95rem; max-width: 34rem; margin-inline: auto; }
+.after-d { margin-top: .8rem; text-align: center; color: var(--candle); font-size: var(--step-1); }
+
+/* מעבר אל החדר */
+.home.leaving .stage { transition: transform .8s cubic-bezier(.5,0,.3,1), opacity .8s; transform: scale(1.6); opacity: 0; }
+.home.leaving .home-head { transition: opacity .4s; opacity: 0; }
+
+/* קטעים תחתונים בבית */
+.band { padding-block: clamp(48px, 8vw, 90px); border-top: 1px solid var(--line); }
+.band h2 { font-size: var(--step-2); margin-bottom: .8rem; }
+.fly-quote { display: grid; gap: 1rem; }
+.fly-quote blockquote { margin: 0; font-size: var(--step-1); line-height: 1.6; }
+.fly-quote cite { font-style: normal; color: var(--muted); font-family: var(--sans); font-size: .95rem; }
+.video-row { display: grid; grid-template-columns: 1fr 1.3fr; gap: clamp(20px, 4vw, 44px); align-items: center; }
+.video-row > * { min-width: 0; }
+.video-box {
+  position: relative; aspect-ratio: 16 / 9; max-width: 100%; border-radius: 6px; overflow: hidden;
+  background: radial-gradient(70% 90% at 50% 100%, var(--candle-soft), transparent), var(--night-2);
+  border: 1px solid var(--line); display: grid; place-items: center; text-align: center;
+}
+.video-box video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #000; }
+.video-box iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.video-box button { background: none; border: 0; cursor: pointer; display: grid; gap: .6rem; justify-items: center; }
+.play { width: 64px; height: 64px; border-radius: 50%; border: 2px solid var(--candle); display: grid; place-items: center; }
+.play::after { content: ""; border-style: solid; border-width: 11px 18px 11px 0; border-color: transparent var(--candle) transparent transparent; margin-left: -3px; }
+.buy-band { text-align: center; display: grid; gap: 1rem; justify-items: center; }
+.buy-band p { color: var(--muted); max-width: 36rem; }
+.foot { padding-block: 32px; color: var(--muted); font-family: var(--sans); font-size: .85rem; text-align: center; border-top: 1px solid var(--line); }
+.foot a { color: var(--paper); }
+
+/* ============================================================
+   החדרים
+   ============================================================ */
+.room {
+  --bg: var(--night); --fg: var(--paper); --mute: var(--muted); --accent: var(--candle);
+  --surface: rgba(255,255,255,.04); --rule: var(--line);
+  background: var(--bg); color: var(--fg); min-height: 100%;
+}
+@keyframes enter { from { opacity: .35; transform: translateY(14px); } }
+.room[data-room="a"] { --bg: #08161e; --accent: #8fd0e6; --surface: rgba(143,208,230,.07); }
+.room[data-room="b"] { --bg: #0b1c25; --accent: #5cc3c4; --surface: rgba(92,195,196,.07); }
+.room[data-room="c"] { --bg: #1c160e; --accent: #f0b65a; --surface: rgba(240,182,90,.08); }
+.room[data-room="d"] {
+  --bg: #f4ead8; --fg: #2b1d12; --mute: #6e5a48; --accent: #9a5518;
+  --surface: rgba(154,85,24,.07); --rule: rgba(43,29,18,.16);
+  color-scheme: light;
+}
+.room .btn-ghost { color: var(--fg); border-color: var(--rule); }
+.room .eyebrow { color: var(--mute); }
+
+.topbar {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--rule);
+}
+.topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 10px; }
+.topbar nav { display: flex; gap: 6px; }
+.topbar nav a {
+  font-family: var(--serif); font-weight: 900; text-decoration: none; width: 2.1rem; height: 2.1rem;
+  display: grid; place-items: center; border-radius: 50%; border: 1px solid var(--rule); color: var(--mute);
+}
+.topbar nav a[aria-current="page"] { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+.topbar .home-link { font-family: var(--sans); font-weight: 700; text-decoration: none; font-size: .95rem; }
+.topbar .btn { padding: .45em 1em; font-size: .9rem; }
+
+.room-head { padding-block: clamp(36px, 7vw, 80px) clamp(24px, 4vw, 40px); display: grid; grid-template-columns: auto 1fr; gap: clamp(16px, 4vw, 40px); align-items: start; }
+.room-head > * { min-width: 0; }
+.big-letter { font-weight: 900; font-size: clamp(5rem, 20vw, 11rem); line-height: .8; color: var(--accent); }
+.room-head h1 { font-size: var(--step-3); }
+.room-head .lead { margin-top: 1rem; font-size: var(--step-1); line-height: 1.6; max-width: 38rem; }
+.epigraph { margin: 1.4rem 0 0; padding-inline-start: 1rem; border-inline-start: 2px solid var(--accent); color: var(--mute); max-width: 36rem; }
+.epigraph cite { display: block; font-style: normal; font-family: var(--sans); font-size: .85rem; margin-top: .3rem; }
+.howto { font-family: var(--sans); color: var(--mute); font-size: .95rem; max-width: 40rem; padding-block-end: 8px; }
+
+.section { padding-block: clamp(28px, 5vw, 52px); border-top: 1px solid var(--rule); }
+.section > h2 { font-size: var(--step-2); }
+.section > .note { margin-top: .5rem; color: var(--mute); max-width: 40rem; }
+.ch {
+  font-family: var(--sans); font-size: .78rem; font-weight: 700; letter-spacing: .04em;
+  color: var(--accent); white-space: nowrap;
+}
+
+/* כרטיסי שאלה */
+.cards { display: grid; gap: 12px; margin-top: 1.4rem; }
+.qcard { border: 1px solid var(--rule); border-radius: 10px; background: var(--surface); scroll-margin-top: 80px; }
+.qcard > button.qhead {
+  width: 100%; display: flex; align-items: baseline; justify-content: space-between; gap: 16px;
+  background: none; border: 0; padding: 18px 20px; cursor: pointer; text-align: start;
+}
+.qhead .qt { font-size: var(--step-1); font-weight: 700; line-height: 1.35; }
+.qhead .qt::before { content: "+"; display: inline-block; width: 1.2em; color: var(--accent); font-family: var(--sans); }
+.qcard.open .qhead .qt::before { content: "–"; }
+.qbody { padding: 0 20px 20px; display: grid; gap: 14px; }
+.step { display: grid; gap: 4px; animation: enter .45s ease both; }
+.step .lbl { font-family: var(--sans); font-weight: 800; font-size: .8rem; letter-spacing: .06em; color: var(--accent); }
+.step p { max-width: 40rem; }
+.qbody .next { justify-self: start; }
+.threads { display: flex; flex-wrap: wrap; gap: 10px 22px; padding-top: 6px; border-top: 1px dashed var(--rule); }
+.qcard.flash { animation: flash 1.6s ease; }
+@keyframes flash { 0%, 40% { box-shadow: 0 0 0 3px var(--accent); } 100% { box-shadow: 0 0 0 0 transparent; } }
+
+/* משחק אגריפס */
+.game { margin-top: 1.4rem; border: 1px solid var(--rule); border-radius: 12px; padding: clamp(18px, 4vw, 30px); display: grid; gap: 14px; background: var(--surface); }
+.chain { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.chain li { display: grid; grid-template-columns: auto 1fr; gap: 10px; animation: enter .4s ease both; }
+.chain li .who { font-family: var(--sans); font-size: .8rem; font-weight: 700; color: var(--mute); padding-top: .3em; min-width: 3.6em; }
+.chain li.claim p { font-size: var(--step-1); font-weight: 700; }
+.chain li.ask p { color: var(--accent); font-style: italic; }
+.chain li.circle p::after { content: "  ↺"; color: var(--accent); }
+.exits { display: flex; flex-wrap: wrap; gap: 10px; }
+.exit-out { display: grid; gap: 4px; }
+.exit-out b { color: var(--accent); }
+.verdict { padding-top: 12px; border-top: 1px solid var(--rule); }
+
+.diagnosis { margin-top: 1.4rem; display: grid; gap: 1rem; max-width: 42rem; }
+.diagnosis .pull { font-size: var(--step-2); line-height: 1.35; color: var(--accent); font-weight: 700; }
+
+/* חלק ב': כרטיסי היפוך */
+.flips { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 12px; margin-top: 1.4rem; }
+.flip {
+  text-align: start; cursor: pointer; border: 1px solid var(--rule); border-radius: 10px; background: var(--surface);
+  padding: 18px; display: grid; gap: 8px; align-content: start; min-height: 9.5rem;
+}
+.flip .front { font-size: var(--step-1); line-height: 1.35; color: var(--mute); }
+.flip .back { font-size: var(--step-1); line-height: 1.35; font-weight: 700; color: var(--accent); }
+.flip .txt { font-size: .98rem; }
+.flip:not(.on) .back, .flip:not(.on) .txt { display: none; }
+.flip.on .front { text-decoration: line-through; text-decoration-color: var(--accent); }
+.flip .tap { font-family: var(--sans); font-size: .8rem; color: var(--mute); }
+.flip.on .tap { display: none; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  font-family: var(--sans); font-weight: 700; cursor: pointer;
+  border: 1px solid var(--rule); background: transparent; border-radius: 999px; padding: .45em 1.05em;
+}
+.chip[aria-pressed="true"] { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+.holiday-q { font-size: var(--step-2); font-weight: 700; }
+.holiday-q .slot { color: var(--accent); border-bottom: 2px dashed var(--accent); padding-inline: .2em; }
+.answer { min-height: 3.4em; font-size: var(--step-1); line-height: 1.5; }
+.answer.odd { color: var(--accent); }
+
+.jar-box { display: grid; grid-template-columns: minmax(0, 240px) 1fr; gap: clamp(16px, 4vw, 40px); align-items: center; margin-top: 1.4rem; }
+.jar-box > * { min-width: 0; }
+.jar-box svg { width: 100%; height: auto; display: block; }
+.jar-glass { fill: rgba(92,195,196,.08); stroke: var(--accent); stroke-width: 2.5; }
+.fly-dot { fill: var(--fg); }
+
+/* חלק ג': שערים */
+.tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1rem; }
+.tab {
+  cursor: pointer; border: 1px solid var(--rule); background: transparent; border-radius: 8px;
+  padding: .6em 1em; font-family: var(--serif); font-weight: 700; font-size: 1.05rem;
+}
+.tab small { display: block; font-family: var(--sans); font-weight: 400; font-size: .75rem; color: var(--mute); }
+.tab[aria-selected="true"] { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+.tab[aria-selected="true"] small { color: inherit; }
+.gate-new { margin-top: .8rem; font-family: var(--sans); font-size: .9rem; color: var(--accent); }
+
+/* חלק ד' */
+.pattern { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 1.4rem; counter-reset: s; }
+.pattern li { list-style: none; border-top: 3px solid var(--accent); padding-top: 12px; display: grid; gap: 6px; }
+.pattern li b { font-size: var(--step-1); }
+.pattern li b::before { counter-increment: s; content: counter(s) ". "; color: var(--accent); }
+.pattern { padding: 0; margin-inline: 0; }
+.fronts { margin-top: 1.8rem; display: grid; gap: 0; border-top: 1px solid var(--rule); }
+.fronts div { display: grid; grid-template-columns: 6rem 1fr auto 1fr; gap: 12px; align-items: baseline; padding-block: 10px; border-bottom: 1px solid var(--rule); }
+.fronts div > * { min-width: 0; }
+.fronts .k { font-weight: 700; }
+.fronts .f { color: var(--mute); text-decoration: line-through; text-decoration-color: color-mix(in srgb, var(--mute) 60%, transparent); }
+.fronts .arr { color: var(--accent); font-family: var(--sans); }
+.fronts .t { font-weight: 700; color: var(--accent); }
+
+.sorter { margin-top: 1.4rem; display: grid; gap: 10px; }
+.sort-row { display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center; padding: 10px 14px; border: 1px solid var(--rule); border-radius: 10px; background: var(--surface); }
+.sort-row > * { min-width: 0; }
+.sort-row .it { font-weight: 700; }
+.sort-row .fb { grid-column: 1 / -1; font-family: var(--sans); font-size: .88rem; }
+.sort-row .fb.ok { color: var(--accent); }
+.sort-row .fb.no { color: #a2462e; }
+.sort-btns { display: flex; gap: 6px; }
+.sort-btns .chip { font-size: .85rem; padding: .35em .85em; }
+.score { font-family: var(--sans); color: var(--mute); }
+
+.ending { padding-block: clamp(48px, 9vw, 110px); display: grid; gap: 1.2rem; justify-items: center; text-align: center; }
+.ending p { max-width: 34rem; font-size: var(--step-1); line-height: 1.6; }
+.ending p:first-child { font-size: var(--step-3); font-weight: 900; line-height: 1.15; color: var(--accent); }
+.ending .btn-buy { margin-top: 1rem; font-size: 1.1rem; }
+
+.room-foot { padding-block: 28px 48px; border-top: 1px solid var(--rule); display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; align-items: center; }
+
+/* ---------- טלפון ---------- */
+@media (max-width: 640px) {
+  .video-row, .jar-box { grid-template-columns: 1fr; }
+  .jar-box svg { max-width: 200px; margin-inline: auto; }
+  .room-head { grid-template-columns: 1fr; }
+  .big-letter { font-size: 5.5rem; }
+  .pattern { grid-template-columns: 1fr; }
+  .fronts div { grid-template-columns: 1fr auto 1fr; }
+  .fronts .k { grid-column: 1 / -1; }
+  .sort-row { grid-template-columns: 1fr; }
+  .topbar .btn { display: none; }
+  .tabs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+  .tab { padding: .5em .3em; text-align: center; }
+  .stage::before { height: 24%; }
+  .qcard > button.qhead { padding: 16px; }
+  .qbody { padding: 0 16px 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+/* ---------- תמונות מהסרט ---------- */
+.hero-still {
+  position: relative; margin-inline: calc(50% - 50vw); margin-top: calc(-1 * clamp(28px, 6vw, 64px));
+  padding: clamp(40px, 9vw, 110px) var(--gutter) clamp(20px, 4vw, 40px);
+  background: linear-gradient(180deg, rgba(7,26,34,.55), rgba(7,26,34,.35) 40%, var(--night) 100%);
+}
+.still {
+  height: clamp(180px, 34vw, 380px);
+  background: var(--still) center / cover no-repeat;
+  -webkit-mask: linear-gradient(#000 55%, transparent);
+          mask: linear-gradient(#000 55%, transparent);
+}
+.room-head { margin-top: calc(-1 * clamp(70px, 12vw, 150px)); position: relative; }
+.room-head .big-letter { text-shadow: 0 4px 30px rgba(0,0,0,.45); }
+.room[data-room="d"] .room-head .big-letter { text-shadow: none; }
+.figure-still { margin-top: 1.2rem; width: min(100%, 620px); border-radius: 8px; overflow: hidden; max-width: 100%; }
+.figure-still img { display: block; width: 100%; height: auto; }
+.figure-still figcaption { font-family: var(--sans); font-size: .82rem; color: var(--mute); padding-top: .4rem; }
+
+/* ---------- הסרט: חלון קופץ ---------- */
+.btn-film {
+  margin-top: 1.6rem; gap: .8em; font-size: clamp(1.05rem, 2.6vw, 1.3rem); padding: .75em 1.6em .75em 1.9em;
+  background: var(--candle); color: #1d1608; border-color: var(--candle);
+  box-shadow: 0 0 0 0 rgba(235,160,76,.55), 0 14px 34px -10px rgba(235,160,76,.7);
+}
+.btn-film:hover { background: #f5b86a; transform: translateY(-2px) scale(1.02); }
+.btn-film .play-sm {
+  width: 2.1em; height: 2.1em; border-radius: 50%; background: #1d1608; display: grid; place-items: center; border: 0;
+}
+.btn-film .play-sm::after { content: ""; border-style: solid; border-width: .45em .75em .45em 0; border-color: transparent var(--candle) transparent transparent; margin-left: -.15em; }
+.btn-film small { font-weight: 400; opacity: .75; font-size: .8em; }
+@keyframes filmPulse { 0% { box-shadow: 0 0 0 0 rgba(235,160,76,.55), 0 14px 34px -10px rgba(235,160,76,.7); } 70%, 100% { box-shadow: 0 0 0 18px rgba(235,160,76,0), 0 14px 34px -10px rgba(235,160,76,.7); } }
+
+.film-pop {
+  position: fixed; inset: 0; z-index: 50; display: grid; place-items: center;
+  padding: calc(env(safe-area-inset-top, 0px) + 16px) 16px calc(env(safe-area-inset-bottom, 0px) + 16px);
+  background: rgba(3, 12, 16, .82); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  animation: fade .4s ease both;
+}
+.film-card {
+  position: relative; width: min(100%, 980px); display: grid; gap: 14px;
+  animation: pop .55s cubic-bezier(.2,.9,.25,1.15) both;
+}
+.film-card .video-box { box-shadow: 0 30px 80px -20px rgba(0,0,0,.8), 0 0 0 1px var(--line), 0 0 60px -10px rgba(235,160,76,.35); }
+.film-cap { display: grid; gap: .3rem; max-width: 46rem; }
+.film-cap h2 { font-size: var(--step-1); }
+.film-cap p { color: var(--muted); font-size: .98rem; }
+.film-cap .link-btn { justify-self: start; margin-top: .3rem; }
+.film-x {
+  position: absolute; top: -14px; left: -14px; z-index: 2; width: 40px; height: 40px; border-radius: 50%;
+  border: 1px solid var(--line); background: var(--night-2); color: var(--paper); font-size: 1.5rem; line-height: 1; cursor: pointer;
+}
+.video-box .film-sound { position: absolute; bottom: 64px; right: 16px; z-index: 2; display: inline-flex; font-size: .95rem; padding: .55em 1.1em; background: var(--candle); color: #1d1608; border: 0; border-radius: 999px; box-shadow: 0 6px 20px rgba(0,0,0,.45); }
+body.film-open { overflow: hidden; }
+@keyframes fade { from { opacity: 0; } }
+@keyframes pop { from { opacity: 0; transform: translateY(24px) scale(.9); } }
+@media (max-width: 640px) { .film-x { top: -48px; left: 0; } .video-box .film-sound { bottom: 52px; right: 10px; } }
+
+/* ---------- מפת המיקום (צד ימין) ---------- */
+.room-main { min-width: 0; animation: enter .7s ease both; }
+.crumb {
+  flex: 1; min-width: 0; display: flex; align-items: baseline; justify-content: center; gap: .1em;
+  background: none; border: 0; cursor: pointer; font-family: var(--sans); font-size: .95rem; color: var(--fg);
+  white-space: nowrap; overflow: hidden;
+}
+.crumb-room { font-weight: 800; color: var(--accent); }
+.crumb-sec { color: var(--mute); overflow: hidden; text-overflow: ellipsis; }
+.crumb-ico { margin-inline-start: .4em; color: var(--mute); }
+
+.rail {
+  font-family: var(--sans); background: color-mix(in srgb, var(--bg) 92%, #000);
+  border-inline-end: 1px solid var(--rule); padding: calc(env(safe-area-inset-top, 0px) + 18px) 14px 24px;
+  display: flex; flex-direction: column; gap: 10px; overflow-y: auto;
+}
+.rail a, .rail button { color: inherit; text-decoration: none; }
+.rail-home { display: flex; align-items: center; gap: 8px; font-weight: 800; font-size: .95rem; }
+.rail-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--candle); box-shadow: 0 0 10px var(--candle); }
+.rail-book { font-family: var(--serif); font-size: .85rem; color: var(--mute); padding-inline-start: 17px; margin-top: -6px; }
+.rail-rooms { list-style: none; margin: 4px 0 0; padding: 0 0 0 0; padding-inline-start: 4px; display: grid; gap: 2px; border-inline-start: 1px solid var(--rule); margin-inline-start: 4px; }
+.rail-rooms > li > a { display: flex; align-items: center; gap: 10px; padding: 7px 8px; border-radius: 8px; color: var(--mute); }
+.rail-rooms > li > a:hover { background: var(--surface); color: var(--fg); }
+.rail-letter {
+  flex: none; width: 1.9rem; height: 1.9rem; border-radius: 50% 50% 4px 4px; display: grid; place-items: center;
+  font-family: var(--serif); font-weight: 900; color: #fff; background: var(--rc); opacity: .55;
+}
+.rail-name { display: grid; line-height: 1.25; font-weight: 700; font-size: .95rem; }
+.rail-name small { font-weight: 400; font-size: .75rem; opacity: .8; }
+.rail-rooms > li.seen .rail-letter { opacity: .8; }
+.rail-rooms > li.here > a { color: var(--fg); background: var(--surface); }
+.rail-rooms > li.here .rail-letter { opacity: 1; box-shadow: 0 0 0 2px var(--bg), 0 0 0 4px var(--accent); }
+.rail-secs { list-style: none; margin: 4px 0 8px; padding: 0; padding-inline-start: 22px; display: grid; gap: 1px; border-inline-start: 2px solid var(--accent); margin-inline-start: 24px; }
+.rail-secs a, .rail-secs button {
+  display: grid; width: 100%; text-align: start; background: none; border: 0; cursor: pointer;
+  font-family: var(--sans); font-size: .88rem; line-height: 1.3; padding: 6px 8px; border-radius: 6px; color: var(--mute);
+}
+.rail-secs small { font-size: .72rem; opacity: .8; }
+.rail-secs .on { color: var(--fg); background: var(--surface); font-weight: 700; position: relative; }
+.rail-secs .on::before { content: ""; position: absolute; inset-inline-start: -27px; top: 50%; width: 10px; height: 10px; margin-top: -5px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px var(--bg); }
+.rail-buy { margin-top: auto; padding-top: 16px; }
+.rail-buy .btn { width: 100%; justify-content: center; }
+
+@media (min-width: 1100px) {
+  .room { display: grid; grid-template-columns: 250px minmax(0, 1fr); }
+  .rail { position: sticky; top: 0; height: 100vh; height: 100dvh; }
+  .crumb { pointer-events: none; }
+  .crumb-ico { display: none; }
+  .topbar .wrap { max-width: none; }
+}
+@media (max-width: 1099.98px) {
+  .rail {
+    position: fixed; inset-block: 0; inset-inline-start: 0; z-index: 40; width: min(84vw, 300px);
+    transform: translateX(105%); transition: transform .3s ease; box-shadow: -20px 0 50px rgba(0,0,0,.4);
+  }
+  .rail.open { transform: none; }
+  .topbar .home-link { font-size: .85rem; white-space: nowrap; }
+}
+.rail .btn-buy { color: #1d1608; }
+@media (min-width: 1100px) { .topbar .btn-buy { display: none; } }
+@media (max-width: 1099.98px) {
+  .room::after { content: ""; position: fixed; inset: 0; z-index: 39; background: rgba(0,0,0,.45); opacity: 0; pointer-events: none; transition: opacity .3s; }
+  .room:has(.rail.open)::after { opacity: 1; pointer-events: auto; }
+}
+
+/* ---------- וקטורי החריגה ---------- */
+.vec { margin-top: 1.4rem; display: grid; gap: 0; border-radius: 14px; overflow: hidden; border: 1px solid var(--rule); }
+.zone { padding: 16px clamp(12px, 3vw, 22px); display: grid; gap: 10px; }
+.zone-h { font-family: var(--sans); font-weight: 800; font-size: 1.05rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: .2em .6em; }
+.zone-h small { font-weight: 400; font-size: .85rem; color: var(--mute); }
+.vec-arrow { font-size: 1.4rem; color: var(--accent); }
+.z-inf { background: linear-gradient(180deg, rgba(47,88,118,.16), rgba(47,88,118,.05)); min-height: 110px; align-content: start; }
+.z-red { background: linear-gradient(0deg, rgba(110,90,72,.18), rgba(110,90,72,.05)); min-height: 110px; align-content: end; }
+.z-mid { background: var(--surface); border-block: 2px solid var(--accent); }
+.z-mid .zone-h { color: var(--accent); }
+.z-mid.clear { background: linear-gradient(90deg, rgba(235,160,76,.18), rgba(235,160,76,.06)); }
+.zone-items { display: flex; flex-wrap: wrap; gap: 8px; }
+.pool { display: grid; gap: 8px; }
+.tok { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 12px; align-items: center; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--rule); background: var(--bg); }
+.tok .it { font-weight: 700; }
+.tok-btns { display: flex; gap: 6px; flex-wrap: wrap; }
+.tok-btns .chip { font-size: .85rem; padding: .35em .8em; }
+.tok .fb { grid-column: 1 / -1; font-family: var(--sans); font-size: .85rem; }
+.tok .fb.no { color: #a2462e; }
+.tok.placed { display: inline-flex; gap: 8px; align-items: baseline; padding: 6px 12px; border-radius: 999px; animation: enter .45s ease both; }
+.tok.placed .fb { color: var(--mute); font-size: .75rem; }
+.tok.placed.inf { border-color: #2f5876; }
+.tok.placed.red { border-color: #6e5a48; }
+.tok.shake { animation: shake .4s ease; }
+@keyframes shake { 20%, 60% { transform: translateX(-6px); } 40%, 80% { transform: translateX(6px); } }
+.score { margin-top: 1rem; font-family: var(--sans); color: var(--mute); }
+@media (max-width: 640px) { .tok { grid-template-columns: 1fr; } }
+
+/* ---------- טיזר בבית ---------- */
+.teaser { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: clamp(16px, 4vw, 40px); align-items: center; }
+.teaser-vec { display: grid; justify-items: center; font-family: var(--sans); font-weight: 800; gap: 4px; color: var(--muted); }
+.teaser-vec .mid { color: var(--candle); border-block: 2px solid var(--candle); padding: 4px 14px; }
+.teaser-vec .ar { font-size: 1.6rem; line-height: 1; color: var(--paper); }
+.teaser h2 { font-size: var(--step-2); }
+.teaser p { color: var(--muted); max-width: 36rem; margin-block: .5rem 1rem; }
+
+/* ---------- קישור לשאלה והתקדמות ---------- */
+.copy-link { font-family: var(--sans); font-size: .82rem; background: none; border: 1px dashed var(--rule); color: var(--mute); border-radius: 999px; padding: .3em .9em; cursor: pointer; }
+.copy-link:hover { color: var(--fg); border-color: var(--accent); }
+.rail-prog { font-size: .7rem; color: var(--accent); font-weight: 700; margin-inline-start: auto; }
+
+.extra { display: grid; gap: 14px; }
+.extra .game { margin-top: 0; }
+
+/* ---------- קוביות: כל השאלות פרושות ברשת (הכלל של מאיר) ---------- */
+.cards { grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr)); gap: 12px; align-items: stretch; }
+.qcard { transition: box-shadow .2s, transform .2s; }
+.qcard:not(.open) { min-height: 9.5rem; display: grid; }
+.qcard:not(.open):hover { transform: translateY(-2px); box-shadow: 0 10px 24px -14px rgba(0,0,0,.6); border-color: var(--accent); }
+.qcard:not(.open) > button.qhead {
+  height: 100%; flex-direction: column-reverse; align-items: flex-start; justify-content: space-between; gap: 14px; padding: 16px 18px;
+}
+.qcard:not(.open) .qhead .qt { font-size: 1.12rem; }
+.qcard:not(.open) .qhead .qt::before { content: none; }
+.qcard:not(.open) .qhead::after {
+  content: "גע כדי לפתוח"; font-family: var(--sans); font-size: .78rem; color: var(--mute); order: -1;
+}
+.qcard.open { border-color: var(--accent); }
+.qcard.open .qbody { padding: 0 16px 16px; }
+.qcard.open > button.qhead { padding: 16px; }
+.qcard.open .qhead .qt { font-size: 1.12rem; }
+.qcard .step p { font-size: .98rem; }
+.qcard .next { font-size: .9rem; padding: .5em 1em; }
+.qcard:has(.extra:not([hidden]) :is(.game, .vec)) { grid-column: 1 / -1; }
+.figure-still img { aspect-ratio: 21 / 8; object-fit: cover; }
+@media (max-width: 640px) {
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .qcard:not(.open) { min-height: 8rem; }
+  .qcard:not(.open) > button.qhead { padding: 12px; gap: 8px; }
+  .qcard:not(.open) .qhead .qt { font-size: 1rem; }
+  .qcard.open { grid-column: 1 / -1; }
+}
+.qcard.seen:not(.open) { border-style: solid; border-color: color-mix(in srgb, var(--accent) 45%, var(--rule)); }
+.qcard.seen:not(.open) .qhead::after { content: "נפתחה ✓"; color: var(--accent); }
+
+/* ---------- חלק ג': ארבעה ריבועים, ובכל אחד ריבועי הפרקים ---------- */
+.gates-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; padding-block: 8px 40px; }
+.gate-box { border: 1px solid var(--rule); border-radius: 16px; padding: clamp(14px, 2.5vw, 22px); background: var(--surface); display: grid; gap: 10px; align-content: start; scroll-margin-top: 70px; }
+.gate-box h2 { font-size: var(--step-1); display: grid; gap: 2px; }
+.gate-box h2 small { font-family: var(--sans); font-size: .75rem; font-weight: 700; letter-spacing: .05em; color: var(--accent); }
+.gate-meta { font-family: var(--sans); font-size: .8rem; color: var(--mute); }
+.minis { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.mini {
+  text-align: start; cursor: pointer; border: 1px solid var(--rule); border-radius: 10px; background: var(--bg);
+  padding: 10px 12px; display: grid; gap: 4px; align-content: start; min-height: 6.2rem;
+  transition: transform .15s, border-color .15s;
+}
+.mini:hover { transform: translateY(-2px); border-color: var(--accent); }
+.mini-ch { font-family: var(--serif); font-weight: 900; font-size: 1.5rem; line-height: 1; color: var(--accent); }
+.mini-q { font-size: .95rem; line-height: 1.35; font-weight: 700; }
+.mini.seen { border-color: color-mix(in srgb, var(--accent) 50%, var(--rule)); }
+.mini.seen .mini-ch::after { content: " ✓"; font-size: .8rem; font-family: var(--sans); }
+.sheet { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; padding: calc(env(safe-area-inset-top, 0px) + 16px) 16px calc(env(safe-area-inset-bottom, 0px) + 16px); background: rgba(10, 8, 4, .72); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); animation: fade .3s ease both; }
+.sheet-card { position: relative; width: min(100%, 720px); max-height: 100%; overflow-y: auto; background: var(--bg); border: 1px solid var(--rule); border-radius: 16px; padding: 18px; display: grid; gap: 8px; animation: pop .4s cubic-bezier(.2,.9,.25,1.1) both; }
+.sheet-card .film-x { top: 10px; left: 10px; }
+.sheet-card .qcard { border: 0; background: none; min-height: 0; }
+.sheet-card .qcard > button.qhead { padding: 4px 0 8px; cursor: default; }
+.sheet-card .qcard .qhead .qt { font-size: var(--step-2); }
+.sheet-card .qcard .qhead .qt::before { content: none; }
+.sheet-card .qbody { padding: 0; }
+@media (max-width: 640px) {
+  .gates-grid { grid-template-columns: 1fr; }
+  .cards { }
+}
+
+.sheet-card .qhead .ch { display: none; }
+.sheet-card .eyebrow { padding-inline-end: 48px; }
+
+/* ---------- הבית: הדלתות מיד מתחת לכותרת, על רקע התמונה ---------- */
+.hero-still { padding-bottom: clamp(16px, 3vw, 28px); background: linear-gradient(180deg, rgba(7,26,34,.5), rgba(7,26,34,.3) 35%, rgba(7,26,34,.85) 75%, var(--night) 100%); }
+.hero-still .stage { margin-top: clamp(20px, 4vw, 40px); }
+.hero-still .home-head .sub { color: var(--paper); opacity: .85; }
+
+/* ---------- חלון הסרט הצף ---------- */
+.film-float {
+  position: fixed; z-index: 30; inset-inline-end: 16px; bottom: calc(env(safe-area-inset-bottom, 0px) + 16px);
+  display: flex; align-items: center; gap: 4px; padding: 6px; border-radius: 16px;
+  background: color-mix(in srgb, var(--night-2) 92%, transparent); border: 1px solid rgba(235,160,76,.5);
+  box-shadow: 0 18px 40px -12px rgba(0,0,0,.7), 0 0 30px -8px rgba(235,160,76,.45);
+  animation: pop .5s cubic-bezier(.2,.9,.25,1.2) both;
+}
+.film-float-open { display: flex; align-items: center; gap: 12px; background: none; border: 0; cursor: pointer; padding: 0; text-align: start; font-family: var(--sans); }
+.film-thumb { width: 104px; aspect-ratio: 16 / 9; border-radius: 10px; background-size: cover; background-position: center; display: grid; place-items: center; }
+.film-thumb .play-sm { width: 34px; height: 34px; border-radius: 50%; background: var(--candle); display: grid; place-items: center; box-shadow: 0 0 0 0 rgba(235,160,76,.6); }
+.film-thumb .play-sm::after { content: ""; border-style: solid; border-width: 7px 11px 7px 0; border-color: transparent #1d1608 transparent transparent; margin-left: -3px; }
+.film-float-txt { display: grid; padding-inline-end: 6px; }
+.film-float-txt b { font-size: 1rem; color: var(--paper); }
+.film-float-txt small { font-size: .78rem; color: var(--muted); }
+.film-float-x { align-self: flex-start; width: 26px; height: 26px; border-radius: 50%; border: 0; background: transparent; color: var(--muted); font-size: 1.1rem; cursor: pointer; }
+.film-float-x:hover { color: var(--paper); }
+@media (max-width: 640px) { .film-float { inset-inline: 12px; } .film-float-open { flex: 1; } .film-thumb { width: 88px; } }
+
+/* ============================================================
+   חזרה לעיצוב הסרט, עם המבנה החדש
+   ============================================================ */
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* פתיחה: כותרת פשוטה, הדלתות באמצע, כפתור רכישה רגיל */
+.hero { position: relative; text-align: center; padding: clamp(26px, 4vw, 48px) var(--gutter) clamp(26px, 4vw, 44px);
+  background: linear-gradient(180deg, rgba(7,26,34,.55), rgba(7,26,34,.35) 40%, rgba(7,26,34,.88) 80%, var(--night) 100%); }
+.ht { display: grid; gap: .35rem; justify-items: center; }
+.ht h1 { display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; gap: .2em .7em; font-family: var(--serif); font-weight: 700; font-size: clamp(1.9rem, 4.4vw, 3.2rem); line-height: 1.15; color: var(--paper); }
+.ht-author { font-family: var(--sans); font-weight: 400; font-size: .42em; letter-spacing: .08em; color: var(--muted); padding-inline-start: .9em; border-inline-start: 1px solid var(--line); }
+.ht-sub { font-family: var(--serif); font-size: clamp(1.1rem, 2vw, 1.4rem); color: var(--paper); opacity: .9; }
+.ht-basis { font-family: var(--sans); font-size: .9rem; color: var(--muted); }
+.hero .stage { margin: clamp(22px, 3.4vw, 40px) auto 0; max-width: 680px; padding-bottom: 0; }
+.hero .stage::before { display: none; }
+.hero .doors { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.hero .door { max-width: 132px; }
+.hero .door .panel .glyph { color: var(--ink, #fff); }
+.hero .door .panel::after { background: var(--ink, #e9d29b); opacity: .85; }
+.hero-buy { margin-top: clamp(20px, 3vw, 30px); display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+
+/* הדלתות נפתחות ונסגרות אחת אחרי השנייה */
+@keyframes doorPeek { 0%, 62%, 100% { transform: rotateY(0deg); } 72%, 84% { transform: rotateY(-42deg); } }
+.hero .door .panel { animation: doorPeek 8s ease-in-out infinite; }
+.hero .door-wrap:nth-child(2) .panel { animation-delay: 2s; }
+.hero .door-wrap:nth-child(3) .panel { animation-delay: 4s; }
+.hero .door-wrap:nth-child(4) .panel { animation-delay: 6s; }
+.hero .door:hover .panel, .hero .door:focus-visible .panel { animation: none; transform: rotateY(-35deg); }
+.hero .door.open .panel { animation: none; transform: rotateY(-105deg); }
+.home-strip .hero .door:not(.open) .panel { animation: none; }
+.door.open { cursor: default; }
+
+/* הקוביות בתוך ריבועי חלק ג' */
+.gate-box .cards { margin-top: 4px; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.gate-box .qcard:not(.open) { min-height: 7rem; background: var(--bg); }
+.gate-box .qcard:not(.open) > button.qhead { padding: 12px; gap: 8px; }
+.gate-box .qcard:not(.open) .qhead .qt { font-size: 1rem; }
+.gate-box .qcard.open { grid-column: 1 / -1; }
+.qcard:has(.extra:not([hidden]) :is(.game, .vec)) { grid-column: 1 / -1; }
+
+/* שאל את המומחה */
+.ask-lead { color: var(--muted); max-width: 40rem; margin-bottom: 1.4rem; }
+.ask-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.ask-tile { display: grid; gap: 10px; align-content: space-between; min-height: 9.5rem; padding: 16px; border-radius: 12px; border: 1px solid var(--line); background: var(--night-2); text-decoration: none; }
+.ask-tile:hover { border-color: var(--candle); }
+.ask-tile b { font-size: 1.15rem; line-height: 1.35; color: var(--paper); }
+.ask-tile .ch { color: var(--candle); }
+.ask-go { font-family: var(--sans); font-size: .85rem; font-weight: 700; color: var(--candle); }
+.rail-mumche { display: flex; align-items: center; gap: 10px; padding: 7px 8px; margin-top: 6px; border-radius: 8px; color: var(--mute); border-top: 1px solid var(--rule); text-decoration: none; }
+.rail-mumche.here { background: var(--surface); color: var(--fg); }
+.rail-mumche .rail-letter { background: var(--accent); opacity: .7; }
+.rail-mumche.here .rail-letter { opacity: 1; }
+.room[data-room="m"] { --bg: #0b1c25; --accent: #eba04c; --surface: rgba(235,160,76,.07); }
+.extra { display: grid; gap: 14px; }
+.home-strip { border-bottom: 1px solid var(--line); }
+
+@media (max-width: 900px) { .ask-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 760px) { .ht-author { border: 0; padding: 0; flex-basis: 100%; } }
+.rail-letter { color: var(--rk, #fff); }
+.home { padding-top: 0; }
+.film-thumb .play-sm::after { border-width: 7px 0 7px 11px; border-color: transparent transparent transparent #1d1608; margin-left: 3px; }
+.play-sm::after { border-width: 7px 0 7px 11px !important; border-color: transparent transparent transparent #1d1608 !important; margin-left: 3px !important; }
+
+.ht h1 { display: block; }
+.ht-author { font-family: var(--sans); font-weight: 400; font-size: clamp(1rem, 1.6vw, 1.2rem); letter-spacing: .12em; color: var(--muted); border: 0 !important; padding: 0 !important; }
+
+/* רקע הפתיחה: טורקיז נקי, בלי תמונה */
+.hero { background: #0c3743; }
+.hero .door .frame { box-shadow: 0 0 0 3px #062a33, 0 0 0 4px rgba(255,255,255,.12), 0 0 34px -8px rgba(191,224,226,.55); background: radial-gradient(80% 60% at 50% 70%, #ffffff, #e6f3f4 50%, #7fb4ba 100%); }
+.hero .door.visited .frame { box-shadow: 0 0 0 3px #062a33, 0 0 0 5px #bfe0e2, 0 0 34px -8px rgba(191,224,226,.55); }
+.hero .door.open .frame { box-shadow: 0 0 0 3px #062a33, 0 0 0 6px #eba04c, 0 0 34px -8px rgba(191,224,226,.55); }
+.ht-author { margin-top: 1.4em; }
+/* בלי תמונות רקע: צבעים בלבד */
+.still { display: none; }
+.room-head { margin-top: 0; }
+/* חלק ג' ו"שאל את המומחה" באותה משפחת צבעים כמו א' וב' (בלי זהב וכתום) */
+.room[data-room="c"] { --bg: #0a1e26; --accent: #6cc9c9; --surface: rgba(108,201,201,.07); }
+.room[data-room="m"] { --bg: #0b1c25; --accent: #5cc3c4; --surface: rgba(92,195,196,.07); }
+.ask-tile .ch, .ask-go { color: #5cc3c4; }
+.ask-tile:hover { border-color: #5cc3c4; }
+/* חלקים א' וב': ריבועי שערים, ובתוכם קוביות הפרקים, כמו בחלק ג' */
+.gate-box .flips { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 4px; }
+.gate-box .flip { min-height: 7rem; padding: 12px; background: var(--bg); }
+.gate-box .flip .front, .gate-box .flip .back { font-size: 1rem; }
+.gate-box .flip.on { grid-column: 1 / -1; }
+.gate-box .gate-meta { font-size: .85rem; line-height: 1.5; }
+/* פתיחה במקום: הקוביה מתרחבת לכל רוחב הריבוע ומכסה את השכנות */
+.gate-box .cards { position: relative; }
+.gate-box .qcard.open { grid-column: auto !important; }
+.gate-box .qcard.float { position: absolute; inset-inline: 0; z-index: 6; box-shadow: 0 24px 60px -16px rgba(0,0,0,.75), 0 0 0 1px var(--accent); }
+.qph { border-radius: 12px; border: 1px dashed var(--rule); }
+.gate-box .flip.on { grid-column: auto; }
+/* חדר ד' באותו עיצוב כמו השאר, עם נספחים */
+.room[data-room="d"] { --bg: #0a1d24; --fg: var(--paper); --mute: var(--muted); --accent: #8fd8cf; --surface: rgba(143,216,207,.07); --rule: var(--line); color-scheme: dark; }
+.room[data-room="d"] .pattern { grid-template-columns: 1fr; gap: 10px; margin-top: 4px; }
+.room[data-room="d"] .pattern li b { font-size: 1.05rem; }
+.room[data-room="d"] .fronts div { grid-template-columns: 4.5rem 1fr auto 1fr; font-size: .95rem; }
+.ending-lines { display: grid; gap: .8rem; }
+.ending-lines p { font-size: 1.05rem; line-height: 1.6; }
+.ending-lines p:first-child { font-size: 1.5rem; font-weight: 700; color: var(--accent); line-height: 1.25; }
+.gate-box .qcard.float { background: color-mix(in srgb, var(--bg) 92%, #ffffff 8%); }
+.gate-box .cards .qcard .ch { white-space: nowrap; }
+
+/* ---------- מינימליזם: קוביות קטנות, בלי הסברים חוזרים ---------- */
+.gate-box .cards { grid-template-columns: repeat(auto-fill, minmax(min(100%, 132px), 1fr)); gap: 6px; }
+.gate-box .qcard:not(.open) { min-height: 4.6rem; }
+.gate-box .qcard:not(.open) > button.qhead { padding: 9px 10px; gap: 4px; }
+.gate-box .qcard:not(.open) .qhead .qt { font-size: .92rem; line-height: 1.3; }
+.gate-box .qcard .ch { font-size: .7rem; }
+.qcard:not(.open) .qhead::after, .qcard.seen:not(.open) .qhead::after { content: none !important; }
+.qcard.seen:not(.open) .ch::after { content: " ✓"; }
+.gate-box .flips { grid-template-columns: repeat(auto-fill, minmax(min(100%, 132px), 1fr)); gap: 6px; }
+.gate-box .flip { min-height: 4.6rem; padding: 9px 10px; gap: 4px; }
+.gate-box .flip .front, .gate-box .flip .back { font-size: .92rem; line-height: 1.3; }
+.gate-box .flip .tap { display: none; }
+.gate-box .flip.on { grid-column: 1 / -1; }
+.gate-box { gap: 8px; padding: clamp(12px, 2vw, 18px); }
+.gate-box h2 { font-size: 1.25rem; }
+.gates-grid.one { grid-template-columns: 1fr; }
+.room-head { padding-block: clamp(24px, 4vw, 44px) clamp(12px, 2vw, 20px); }
+.room-head .lead { font-size: 1.1rem; }
+.big-letter { font-size: clamp(4rem, 12vw, 7rem); }
+.ask-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.ask-tile { min-height: 5.6rem; padding: 12px; gap: 6px; }
+.ask-tile b { font-size: 1rem; }
+.ask-go { display: none; }
+.foot a { color: var(--paper); }
+.room-foot { padding-block: 20px 36px; }
+/* כותרת חדר בשורה אחת: האות, השם והפרקים */
+.room-head { display: block; padding-block: clamp(18px, 3vw, 30px) 6px; }
+.room-head h1 { display: flex; align-items: baseline; flex-wrap: wrap; gap: .1em .45em; font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.2; margin: 0; }
+.rh-letter { color: var(--accent); }
+.room-head h1 small { font-family: var(--sans); font-weight: 400; font-size: .4em; color: var(--mute); margin-inline-start: .4em; }
+.room-head .lead { margin-top: .5rem; font-size: 1.05rem; max-width: 46rem; color: var(--mute); }
+/* החלק יוצא מהדלת: אלומת אור מהדלת הפתוחה עד החדר, וחץ שמצביע אליה */
+.home-strip .hero { padding-bottom: 34px; }
+.home-strip .hero .stage { position: relative; z-index: 1; }
+.hero .beam {
+  position: absolute; z-index: 0; pointer-events: none;
+  top: var(--bt, 0); bottom: 0; left: calc(var(--bx, 50%) - var(--bw, 120px) * .5); width: var(--bw, 120px);
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--beam) 85%, transparent), color-mix(in srgb, var(--beam) 55%, transparent));
+  clip-path: polygon(6% 0, 94% 0, 120% 100%, -20% 100%);
+}
+.room { position: relative; --beam: #21717d; }
+.room::before {
+  content: ""; position: absolute; z-index: 2; top: 0; left: calc(var(--rx, 50%) - 16px); width: 0; height: 0;
+  border-inline: 16px solid transparent; border-top: 14px solid var(--beam);
+}
+.room-main { background: radial-gradient(420px 160px at var(--rx, 50%) 0, color-mix(in srgb, var(--beam) 32%, transparent), transparent 75%); }
+.room .topbar { border-top: 3px solid var(--beam); }
+.hero .beam { background: linear-gradient(to bottom, color-mix(in srgb, var(--beam) 60%, #ffffff 40%), color-mix(in srgb, color-mix(in srgb, var(--beam) 70%, #ffffff 30%) 70%, transparent)); }
+.room::before { border-top-color: color-mix(in srgb, var(--beam) 70%, #ffffff 30%); }
+.room .topbar { border-top-color: color-mix(in srgb, var(--beam) 70%, #ffffff 30%); }
+/* החלק שנפתח מואר: בהיר מהרקע, באור של הדלת שלו, והאור יורד אליו מהדלת */
+.room { --lit: color-mix(in srgb, var(--beam) 38%, #0b1c25); }
+.room-main { background: var(--lit) !important; }
+.room .gate-box { background: color-mix(in srgb, var(--lit) 80%, #ffffff 6%); }
+.hero .beam {
+  left: 0 !important; right: 0; width: auto !important;
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--beam) 55%, #ffffff 45%), color-mix(in srgb, var(--beam) 38%, #0b1c25)) !important;
+  clip-path: polygon(calc(var(--bx) - var(--bw) * .5 + 4px) 0, calc(var(--bx) + var(--bw) * .5 - 4px) 0, 100% 100%, 0 100%) !important;
+}
+.room::before { border-top-color: var(--lit) !important; display: none; }
+.room .topbar { border-top: 0; background: color-mix(in srgb, var(--lit) 92%, transparent); }
+.home-strip .hero .door.open .frame { box-shadow: 0 0 0 3px #062a33, 0 0 0 6px #ffffff, 0 0 60px 10px color-mix(in srgb, var(--beam, #bfe0e2) 60%, #ffffff); }
+
+/* ============================================================
+   סולם בהירות אחד לכל האתר:
+   רקע = הטורקיז של הפתיחה; כל חלק בהיר ממנו במדרגה קטנה, ומא' לד' מתבהר בהדרגה;
+   ריבוע = מדרגה מעל החלק; קוביה = מדרגה מתחתיו.
+   ============================================================ */
+:root { --night: #0c3743; --night-2: #0f4250; --deep: #0a2f3a; --line: rgba(233,239,240,.13); }
+body { background: var(--night); }
+.hero, .home, .band { background: var(--night); }
+.band { border-top: 1px solid var(--line); }
+.foot { background: var(--deep); border-top: 0; }
+.ask-tile { background: var(--night-2); border-color: var(--line); }
+
+.room { --lit: #0f4250; }
+.room[data-room="a"] { --lit: #0f4250; }
+.room[data-room="b"] { --lit: #124a58; }
+.room[data-room="c"] { --lit: #155262; }
+.room[data-room="d"] { --lit: #195a6b; }
+.room[data-room="m"] { --lit: #0f4250; }
+.room[data-room] { --bg: color-mix(in srgb, var(--lit) 80%, #000); --surface: color-mix(in srgb, var(--lit) 90%, #fff); --rule: rgba(233,239,240,.13); --fg: var(--paper); --mute: #a9c1c6; color-scheme: dark; }
+.room { background: var(--night); }
+.room-main { background: var(--lit) !important; }
+.room .gate-box { background: color-mix(in srgb, var(--lit) 93%, #fff) !important; border-color: var(--rule); }
+.gate-box .qcard:not(.open), .gate-box .flip:not(.on) { background: var(--bg); border-color: var(--rule); }
+.gate-box .qcard.float { background: color-mix(in srgb, var(--lit) 88%, #fff) !important; }
+.rail { background: var(--deep); border-color: var(--line); }
+.room .topbar { background: color-mix(in srgb, var(--lit) 94%, transparent); border-bottom-color: var(--rule); }
+.hero .beam { background: linear-gradient(to bottom, color-mix(in srgb, var(--beam) 55%, #ffffff 45%), var(--lit-end, #124a58)) !important; }
+.room-head .lead { color: var(--mute); }
+.film-float { background: var(--night-2); }
+html{direction:rtl}
+/* חלק ב', שער ראשון: בחוץ מופיעה הכותרת הנכונה; התמונה ההפוכה מוצגת, מחוקה, רק בפנים */
+.flip:not(.on) .front { display: none; }
+.flip:not(.on) .back { display: block; }</style>
+<main id="app" dir="rtl" lang="he"></main><script>document.documentElement.dir="rtl";document.documentElement.lang="he";</script><script>
+/* ============================================================
+   הדברים מתחילים מהאמצע – תוכן האתר
+   כל הטקסטים באתר יושבים כאן. לעריכה: לשנות את המחרוזות בלבד.
+   מספרי הפרקים לפי גרסת הספר 10.10.26.
+   ============================================================ */
+
+window.SITE = {
+  /* --- הגדרות: למלא כשיהיו --- */
+  buyUrl: "https://bookpod.co.il/book/%D7%94%D7%93%D7%91%D7%A8%D7%99%D7%9D-%D7%9E%D7%AA%D7%97%D7%99%D7%9C%D7%99%D7%9D-%D7%9E%D7%94%D7%90%D7%9E%D7%A6%D7%A2-%E2%80%93-%D7%98%D7%99%D7%95%D7%98%D7%94-3-17286", // עמוד המכירה בבוקפוד
+  videoFile: "video.mp4", // הסרט שהורכב ב-CapCut (Movies/CapCut/0519(1).mov), דחוס לאתר
+  youtubeId: "",       // אם יעלה סרטון הסבר ל-YouTube: המזהה (מה שאחרי v=). הוא יחליף את הקטע
+  mapUrl: "https://lively-fenglisu-79ba00.netlify.app/", // מפת הספר המלאה
+
+  title: `הדברים מתחילים מהאמצע`,
+  subtitle: `מסע אל המבוך הפילוסופי ובחזרה`,
+  author: `מאיר הסגל`,
+  basis: `מבוסס על הגותו של לודוויג ויטגנשטיין`,
+  openingQuestion: `מה אם כל זה אינו אלא חלום מתעתע?`,
+  openingNote: `ארבע דלתות, ארבעה חלקים של הספר. אפשר להיכנס בכל אחת. הספר עצמו מתחיל במבוך.`,
+
+  preface: {
+    quote: `בדימוי המפורסם שלו, המתפלסף משול לזבוב הלכוד בצנצנת פתוחה: הוא נחבט שוב ושוב בדפנות השקופות בניסיון לעוף, מתוסכל מהקירות הלוכדים אותו, ואינו מבחין שפתח הצנצנת היה פתוח כל הזמן. הבנתי שאני הוא אותו זבוב.`,
+    source: `מתוך ההקדמה האישית`
+  },
+
+  video: {
+    heading: `סרט קצר על הספר`,
+    text: `הפילוסופיה נוטה לחפש התחלה מוחלטת בקצוות: החלקיק האחרון, הרגע הראשון, הוודאות המוחלטת. הסרט מראה לאן זה מוביל, ולמה צריך להתחיל דווקא מהאמצע. (קריינות באנגלית, דקה וחצי)`
+  },
+
+  /* "שאל את המומחה": השאלות־משחקים, במקום אחד */
+  mumche: {
+    id: "m",
+    letter: "?",
+    name: "שאל את המומחה",
+    chapters: "שאלות מתוך הספר",
+    lead: `המומחה כאן הוא ויטגנשטיין. וכדרכו, הוא לא מוסיף לשאלה תשובה: הוא בודק אם השאלה עושה עבודה, ומראה איפה היא נתקעת (פרק 19).`,
+    epigraph: { text: `הפילוסוף מטפל בשאלה, כמו במחלה.`, source: `לודוויג ויטגנשטיין, חקירות פילוסופיות` },
+    howTo: `גע בקוביה כדי לשאול. בסוף כל שאלה יש קישור לפרק שממנו היא באה.`,
+    title: `תשע שאלות`,
+    note: `כל שאלה לקוחה מפרק אחר בספר, ואפשר להתחיל מכל אחת.`,
+    cards: [
+      { id: "g1", ch: "10", q: `איך אתה יודע?`, intro: `הנה טענה פשוטה. שאלו "איך אתה יודע?" ותראו לאן זה מגיע.`, game: "agrippa", back: "a10" },
+      { id: "g2", ch: "27", q: `מה גודל העולם?`, intro: `שאלה רגילה לגמרי, על ארבעה דברים. בחרו על מה לשאול.`, game: "holiday", back: "c27" },
+      { id: "g3", ch: "18, 24", q: `יש דבר־כשלעצמו?`, intro: `טענה מן הוויכוחים הגדולים. נכון, לא נכון, או משהו שלישי?`, game: "verdict", back: "b18" },
+      { id: "g4", ch: "36", q: `אינפלציה או רדוקציה?`, intro: `החריגה מהאמצע נעה בשני כיוונים: מוסיפה לעולם, או מצמצמת אותו. מיינו תשעה רעיונות מתולדות הפילוסופיה.`, game: "sorter", backRoom: "d" },
+      { id: "g5", ch: "26", q: `העולם קיים באמת, או שהוא סרט?`, intro: `בחרו תשובה.`, game: "ask", back: "c26",
+        options: [
+          { label: `קיים באמת`, text: `זה הריאליזם המטאפיזי. הוא מוסיף "עולם שמעבר", אבל הצירוף הזה אינו מוסיף דבר על מה שלפנינו.` },
+          { label: `רק סרט בתודעה`, text: `זה האידיאליזם, ובהקצנתו הסוליפסיזם. אבל "סרט" ו"שלי" שמוחלים על הכול מאבדים את מובנם.` },
+          { label: `השאלה לא עובדת`, right: true, text: `שני הצדדים מביטים מהצד, ושניהם אינם אומרים דבר. מה שנשאר אינו עמדה שלישית, אלא העולם עצמו כפי שאנו חיים בו.` }
+        ] },
+      { id: "g6", ch: "30", q: `איך אדע שלאחר יש נפש?`, intro: `בחרו תשובה.`, game: "ask", back: "c30",
+        options: [
+          { label: `צריך הוכחה`, text: `כך מתחילים כסובייקט מבודד ומנסים לבנות גשר של היסק אל האחר. הגשר הזה לא נבנה.` },
+          { label: `אי אפשר לדעת`, text: `זו בעיית הנפשות האחרות מפרק 2.` },
+          { label: `השאלה לא עובדת`, right: true, text: `קודם מתנהגים אל האחר כנפש, ורק אחר כך לומדים לדבר על נפש. היחס לאחר כנפש אינו תאוריה שאפשר להפריך.` }
+        ] },
+      { id: "g7", ch: "31", q: `יש לנו בחירה חופשית?`, intro: `בחרו תשובה.`, game: "ask", back: "c31",
+        options: [
+          { label: `כן, יש חור בשרשרת הסיבות`, text: `האחריות אינה תלויה בחור כזה.` },
+          { label: `לא, הכול נקבע מראש`, text: `תיאור סיבתי של המעשה אינו פוטר מאחריות.` },
+          { label: `השאלה לא עובדת`, right: true, text: `הסיבתיות והרצון הם שני משחקי־שפה שמשלימים זה את זה. כשמשבחים או גוערים, שואלים אם האדם פעל ביודעין, לא אם יש חור בשרשרת.` }
+        ] },
+      { id: "g8", ch: "נספח ב'", q: `הבינה המלאכותית מבינה?`, intro: `בחרו תשובה.`, game: "ask", back: "nb",
+        options: [
+          { label: `כן, היא מדברת כמונו`, text: `זו האינטואיציה הראשונה: למה להדיר אותה?` },
+          { label: `לא, היא רק מכונה`, text: `זו האינטואיציה השנייה: אין לה גוף, פגיעוּת והיסטוריה.` },
+          { label: `השאלה לא עובדת`, right: true, text: `השאלה אם יש "מישהו" בפנים מחפשת מהות נסתרת מהצד. אם המכונה תהפוך לחלק מצורת־חיינו, היחס אליה ישתנה, וייתכן שהמילה "נפש" תימתח ותכלול גם אותה.` }
+        ] },
+      { id: "g9", ch: "34", q: `מה משמעות החיים?`, intro: `בחרו תשובה.`, game: "ask", back: "c34",
+        options: [
+          { label: `משמעות היא עובדה בעולם`, text: `גם תוכנית אלוהית או חיי נצח אינם מספיקים: אפשר לקבל אותם ועדיין לשאול, אבל האם החיים משמעותיים?` },
+          { label: `אין משמעות, רק הרגשה`, text: `זה מרדד אותה לפסיכולוגיה.` },
+          { label: `השאלה לא עובדת`, right: true, text: `המשמעות אינה דבר בעולם, אלא אופן ראייה של העולם: האור הנוגה על המכלול. התשובה היא היעלמות הקושי.` }
+        ] }
+    ]
+  },
+
+  rooms: [
+    /* ======================= חלק א' ======================= */
+    {
+      id: "a",
+      letter: "א",
+      name: "המבוך",
+      doorQuestion: "מה קיים, ומה אפשר לדעת?",
+      still: { src: "img/a.jpg", alt: "חדר שינה קפוא, ובתקרה פתח אל אותו חדר עצמו, שוב ושוב" },
+      chapters: "פרקים 1-11",
+      lead: `חלק א' נועד לטלטל. הוא מוביל את הקורא אל הקצוות, במרחב ובזמן, בעולם החיצוני ובעולם הפנימי, בידיעה ובמחשבה, עד לכאוס מוחלט. בסופו מתברר שהכאוס אינו נובע מהמציאות, אלא מהפוזיציה שבה העמדנו את עצמנו מולה.`,
+      epigraph: {
+        text: `איפה אני, או מה אני? מאילו סיבות אני שואב את קיומי, ולאיזה מצב אני עתיד לשוב? [...] אני נבוך מכל השאלות האלה.`,
+        source: `דייוויד יום, מסכת על טבע האדם`
+      },
+      howTo: `כל שאלה נפתחת בשני שלבים: החתירה אל הקצה, והקריסה. את המוצא החדר הזה לא נותן. הוא מחכה בחדר ג', "השחרור", והחוט בסוף כל שאלה מוביל אליו.`,
+      sections: [
+        {
+          title: `שער ראשון: התפוררות המציאות`,
+          note: `ספירלה בין שני קטבים: ה"פנים" של התודעה המבודדת וה"חוץ" של העולם הפיזי. כל בריחה לקוטב אחד נגמרת בקריסה, ודוחפת אל הקוטב השני.`,
+          cards: [
+            {
+              id: "a1", ch: "1",
+              q: `מה אם כל זה חלום?`,
+              reach: `דקארט רוצה יסוד ודאי לידע. הוא מקלף כל מה שאפשר לפקפק בו: החושים, הגוף, העולם והזולת. מה שנשאר הוא האני־החושב, "אני חושב, משמע אני קיים".`,
+              collapse: `הספק היה אמור להיות כלי זמני בדרך לבניין יציב. בפועל הוא לא בנה מחדש את הידע, אלא סגר את המציאות כולה בתוך מלכודת תודעתית מבודדת.`,
+              thread: "c23"
+            },
+            {
+              id: "a2", ch: "2",
+              q: `אולי רק אני קיים?`,
+              reach: `אם רק התודעה שלי ודאית, כל השאר הוא מה שמופיע בתוכה. גם בני אדם אחרים.`,
+              collapse: `מכאן קצרה הדרך לסוליפסיזם: האחרים נעשים דמויות בסרט שלי, ואין דבר שמעיד שמאחוריהן יש תודעה. יחד עם בני האדם האחרים מתאיין גם הצורך לחמול עליהם.`,
+              thread: "c30"
+            },
+            {
+              id: "a3", ch: "3",
+              q: `ממה עשוי הכיסא שאני יושב עליו?`,
+              reach: `בורחים מהתודעה החוצה, אל השכל הישר ואל המוצקות של העולם הפיזי. מחפשים את ה"עצם" שמחזיק את התכונות, ואת החלקיק שבבסיס החומר.`,
+              collapse: `העצם של לוק נשאר "משהו, איני יודע מהו". והמדע מגלה שבלב האטום האלקטרון אינו מתנהג כחלקיק מוגדר. ככל שניסינו לאחוז בגרעין המוצק של החומר, כך התפורר בין האצבעות.`,
+              thread: "c25"
+            },
+            {
+              id: "a4", ch: "4",
+              q: `האם לעולם יש סוף?`,
+              reach: `בוחנים את העולם במבט לוגי, בתנועת מלקחיים: זום־אאוט אל גבולות המרחב, הזמן והסיבות, וזום־אין אל החלק הקטן ביותר של החומר.`,
+              collapse: `עולם סופי מעורר מייד את השאלה מה מעבר לגבולו ומה בתוך חלקו האחרון. עולם אינסופי מחייב סדרה שאין בה אחרון, ושבכל זאת כבר הושלמה. מושג החומר נקלע לסתירה בין הסופי לאינסופי.`,
+              thread: "c27"
+            },
+            {
+              id: "a5", ch: "5",
+              q: `ואולי העולם הוא רק סרט בתודעה?`,
+              reach: `אם העולם החיצוני אינו מחזיק את עצמו, אפשר לוותר עליו. חוזרים אל האידיאליזם: המציאות מופיעה רק בתודעה, סרט שאין מאחוריו מקרן. כך נעלמים גם פרדוקסי האינסוף.`,
+              collapse: `ההצלחה סוגרת את הדלת. אם כל מה שאני מכיר הוא סרט שאני צופה בו, אין סיבה להניח צופים נוספים. בורחים מהאבסורד של החוץ, ונופלים בחזרה אל הסוליפסיזם.`,
+              thread: "c26"
+            },
+            {
+              id: "a6", ch: "6",
+              q: `ומי הצופה בסרט?`,
+              reach: `כל הבניין נשען עכשיו על עוגן אחד: האני־החושב, הצופה בסרט. מחפשים אותו.`,
+              collapse: `בהתבוננות פנימה, כמו אצל יום, לא נמצא אני אחד, רק צרור של תפיסות חולפות. נשארנו בין הפח לפחת: בדידות בתוך אני מוזר ולא מבורר, או עולם חיצוני אבסורדי וסתירתי.`,
+              thread: "c29"
+            }
+          ]
+        },
+        {
+          title: `שער שני: שיתוק הידיעה`,
+          note: `מתקפה מקבילה, הפעם על כלי הידיעה. שני כלי העבודה הזמינים לנו, הניסיון והתבונה, קורסים לתוך עצמם.`,
+          cards: [
+            {
+              id: "a7", ch: "7",
+              q: `האם הניסיון מלמד אותנו על העולם?`,
+              reach: `הנתיב האמפירי מבטיח ידע שמבוסס על מה שהעולם מגלה לנו: לאסוף נתונים וללמוד מהם את חוקי הטבע.`,
+              collapse: `איננו יכולים להשליך מההווה לעתיד (יום), איננו יודעים כיצד לאשש תזה (המפל וגודמן), ואיננו יכולים אפילו לאסוף עובדה פשוטה (דוהם וקווין). בלי המושגים שאנו מביאים מהבית, העולם אילם.`,
+              thread: "c20"
+            },
+            {
+              id: "a8", ch: "8",
+              q: `ואולי התבונה תציל?`,
+              reach: `הלוגיקה נראית נצחית ובלתי פגיעה, נכונה גם ביקום שבו פועלים חוקי פיזיקה אחרים. זה "הגביע הקדוש" של מבקש הוודאות.`,
+              collapse: `המסקנה שסוקרטס בן תמותה כבר כלולה בהנחה שכל בני האדם בני תמותה. הלוגיקה ודאית משום שהיא ריקה, ועצם ההפעלה שלה תלויה ב"רצונו הטוב של הצב".`,
+              thread: "c22"
+            },
+            {
+              id: "a9", ch: "9",
+              q: `אז על מה אפשר לסמוך?`,
+              reach: `מנסים לאחד את הניסיון והתבונה לרשת אחת של ידע.`,
+              collapse: `כל הצדקה דורשת הצדקה נוספת, וכל נתיב מוביל בחזרה אל רעהו. נשארנו ברשת סגורה, בלי עוגן מבחוץ ובלי חוף. לא רק שלא ידענו; הבנו שאיננו יכולים לדעת.`,
+              thread: "c20"
+            }
+          ]
+        },
+        {
+          title: `שער שלישי: זיהוי הפוזיציה`,
+          note: `שער מסכם. הוא לא מציג בעיות חדשות, אלא מביט לאחור על שני השערים: קודם על המבנה של הכישלון, ואחר כך על מה שגרם לו.`,
+          cards: [
+            {
+              id: "a10", ch: "10",
+              q: `למה כל הניסיונות נתקעים באותו מקום?`,
+              steps: [
+                ["מה קרה", `בפרק הזה הגיע הזמן "לטפס למגדל תצפית" ולמפות את הכאוס. שלושה מהלכים חזרו לאורך הדרך: הנסיגה אל התודעה המבודדת, התפוררות המציאות ושרירותיות הידע.`],
+                ["טביעת האצבע", `לכל הכשלים מבנה לוגי אחד: הרגרסיה האינסופית. מי שבורח ממנה מוצא רק שתי יציאות, מעגליות או עצירה שרירותית. אלה שלוש הקרניים של טרילמת אגריפס, האנטומיה של המלכודת כולה.`]
+              ],
+              play: "g1",
+              thread: "c20"
+            },
+            {
+              id: "a11", ch: "11",
+              q: `אז למה כל זה קרה?`,
+              steps: [
+                ["האבחנה", `הבעיה אינה בעולם אלא בפרספקטיבה. הפילוסוף מאמץ נקודת תצפית מדומיינת מחוץ לעולם, שממנה אפשר לראות את הכול, את היקום, את האמת ואת הסובייקט המביט עליהם, כאובייקט שלם הפרוס לנגד העיניים. הספר מכנה אותה "המבט־מהצד".`],
+                ["הכיוון", `לא נפתור את הרגרסיה במציאת "אטום" קסום או "אלוהים" פילוסופי שיעצור את השרשרת. כל פתרון כזה רק מאשר שיש בו צורך. ברגע שנוותר על הפוזיציה הזו, הבעיות לא ייפתרו. הן פשוט יתפוגגו.`]
+              ],
+              toRoom: "b"
+            }
+          ]
+        }
+      ],
+      /* המשחק: טרילמת אגריפס */
+      game: {
+        title: `שער שלישי: זיהוי הפוזיציה`,
+        intro: `לפני האבחנה, נסו בעצמכם. הנה טענה פשוטה. שאלו "איך אתה יודע?" ותראו לאן זה מגיע.`,
+        claim: `השמש תזרח מחר.`,
+        steps: [
+          `ראיתי אותה זורחת כל בוקר.`,
+          `מה שקרה תמיד, יקרה גם מחר.`,
+          `כי הטבע מתנהג באופן סדיר.`,
+          `כי עד היום הוא תמיד התנהג באופן סדיר.`
+        ],
+        circleAt: 3,
+        exits: [
+          { label: `להמשיך לשאול`, name: `רגרסיה אינסופית`, text: `כל תשובה דורשת תשובה נוספת, ואין לשרשרת סוף.` },
+          { label: `לחזור לתשובה קודמת`, name: `מעגליות`, text: `התשובה האחרונה כבר מניחה את מה שהיא אמורה להוכיח: "הטבע סדיר כי עד עכשיו היה סדיר".` },
+          { label: `לעצור: "ככה זה"`, name: `עצירה שרירותית`, text: `אפשר לעצור, אבל אז נקודת העצירה עצמה לא הוצדקה.` }
+        ],
+        verdict: `שלוש היציאות האלה הן טרילמת אגריפס. לפי פרק 10, היא האנטומיה של המלכודת הפילוסופית כולה: בכל תחום של ידע אורבת הרגרסיה, וכדי להימנע ממנה בורחים אל המעגליות או אל השרירותיות.`
+      },
+    },
+
+    /* ======================= חלק ב' ======================= */
+    {
+      id: "b",
+      letter: "ב",
+      name: "הריפוי",
+      doorQuestion: "מאיפה באה המבוכה?",
+      still: { src: "img/b.jpg", alt: "אדם שוכב ער בלילה, ובחלון ערפיליות וכוכבים" },
+      chapters: "פרקים 12-19",
+      lead: `חלק ב' מציג את שינוי הפרספקטיבה, הציר המרכזי של הספר: החזרה אל האמצע. אין זו תאוריה חדשה, אלא היזכרות במה שכבר נתון לנו: אנחנו פועלים בתוך העולם ולא צופים בו מבחוץ. ומשם מתברר מה קורה כשהשפה חורגת מהאמצע.`,
+      epigraph: {
+        text: `הפילוסוף מטפל בשאלה, כמו במחלה.`,
+        source: `לודוויג ויטגנשטיין, חקירות פילוסופיות`
+      },
+      howTo: `השער הראשון הוא החזרה לאמצע: חמישה היפוכים. גע בכל אחד כדי לראות מה קודם למה.`,
+      sections: [
+        {
+          title: `שער ראשון: החזרה לאמצע`,
+          note: `בכל אחד מהתחומים הפילוסוף הניח "דבר" שמבסס את מה שלפניו. כאן הסדר מתהפך.`,
+          flips: [
+            { ch: "12", front: `העולם הוא אוסף של אובייקטים`, back: `ההתרחשות קודמת לאובייקט`, text: `במבט היומיומי האובייקטים "שקופים". העולם אינו מוזאון של חפצים אלא התרחשות אחת רציפה ומאוחה, והאובייקט הוא הפשטה מאוחרת מתוכה.` },
+            { ch: "13", front: `קודם יודעים, אחר כך פועלים`, back: `המעשה קודם לידיעה התאורטית`, text: `האדם אינו מתחיל בידיעה על העולם אלא בפעולה בתוכו. הניסיון והתבונה הם צדדים של פרקטיקה אחת, ולא שני נתיבים שצריך לגשר ביניהם.` },
+            { ch: "14", front: `הכלל קובע מראש את יישומו`, back: `היישום קודם לכלל`, text: `הכללים אינם מסילות מופשטות. רק משום שאנו כבר פועלים ושופטים בדרכים מסוימות, יש מובן לדבר על "כלל" ועל "יישומו".` },
+            { ch: "15", front: `המשמעות יושבת בראש`, back: `המובן הוא השימוש`, text: `משמעות המילים אינה קסם תודעתי פנימי. השימוש הציבורי במילים הוא המשמעות.` },
+            { ch: "16", front: `לכל מושג יש מהות`, back: `דמיון משפחתי`, text: `שחמט, ילד הזורק כדור אל הקיר ופסיאנס נקראים כולם "משחק", אבל אין תכונה אחת המשותפת לכולם: לא כל המשחקים משעשעים, לא בכולם יש ניצחון והפסד, ולא כולם תחרותיים. רשת של דומויות חופפות מחזיקה את המושג, ואין הכרח שגבולותיו יהיו חדים כדי שיעבוד.` }
+          ]
+        },
+        {
+          title: `שער שני: החריגה מהאמצע כנונסנס`,
+          note: `הצד השני של אותו מהלך: מה קורה כשהשפה חורגת מהאמצע. החריגה אינה מולידה תובנות עמוקות, אלא נונסנס: דיבור הנראה כבעל משמעות, אך איבד את התנאים המאפשרים לו להיות מובן.`,
+          cards: [
+            {
+              id: "b17", ch: "17",
+              q: `מה קורה כשהמילים יוצאות לחופשה?`,
+              steps: [
+                ["המנגנון", `המחשבה בורחת מהאמצע, הדקדוק מפתה, ומילים יוצאות מן ההקשרים שבתוכם הן פועלות. הן ממשיכות להישמע כבעלות משמעות, אבל מסתחררות על ריק.`],
+              ],
+              play: "g2"
+            },
+            {
+              id: "b18", ch: "18",
+              q: `מה מעמדן של השאלות המטאפיזיות?`,
+              steps: [
+                ["האבחנה", `כשהביטויים המטאפיזיים מתנתקים מן הפרקטיקה שמעניקה להם משמעות, הם לא נעשים שקריים. הם מאבדים את מובנם.`],
+              ],
+              play: "g3"
+            },
+            {
+              id: "b19", ch: "19",
+              q: `אז מה נשאר לפילוסוף לעשות?`,
+              steps: [
+                ["התפקיד החדש", `לא לגלות אמיתות נסתרות ולא להציע תזות חדשות, אלא לפרק בלבולים ולהבהיר שימושים. הזבוב הלכוד הוא המתפלסף: הוא נחבט בדפנות השקופות, והפתח היה פתוח כל הזמן.`],
+                ["הזמנה", `השחרור אינו משהו שאפשר לכפות, אלא הזמנה. הצנצנת פתוחה; איש אינו נדחף החוצה. "מהי מטרתך בפילוסופיה? – להראות לזבוב איך לצאת מהצנצנת."`]
+              ],
+              toRoom: "c"
+            }
+          ]
+        }
+      ],
+      holiday: {
+        title: `החריגה מהאמצע: כשהמילים יוצאות לחופשה`,
+        ch: "17, 27",
+        intro: `מה קורה כששאלה רגילה לגמרי עוזבת את המקום שבו היא עובדת? בחרו על מה לשאול:`,
+        question: `מה גודלו?`,
+        items: [
+          { label: `השולחן`, answer: `מודדים: השאלה עושה את עבודתה.` },
+          { label: `השדה`, answer: `מודדים ומשווים: השאלה עושה את עבודתה.` },
+          { label: `גלקסיה`, answer: `מודדים בשנות אור. רחוק, אבל עדיין מדידה.` },
+          { label: `העולם כולו`, answer: `אין מדידה שהשאלה מכוונת אליה, ואין תשובה שהייתה משנה דבר. היא נשמעת כמו קודמותיה, אבל אינה עושה דבר. ועימה מתרוקנים גם הצירופים "העולם סופי" ו"העולם אינסופי".`, odd: true }
+        ],
+        outro: `זו האבחנה של פרק 17: השאלות המטאפיזיות לא נולדות משום שהמציאות מסתירה רובד עמוק, אלא משום שהמילים יוצאות לחופשה. הן ממשיכות להישמע כבעלות משמעות, אך פועלות על ריק.`
+      },
+      verdictGame: {
+        ch: "18",
+        intro: `ומה עושים עם טענה כזו? הנה טענה מתוך אחד הוויכוחים הגדולים. מה תשיבו?`,
+        claim: `מאחורי התופעות קיים "דבר־כשלעצמו".`,
+        options: [
+          { label: `נכון`, text: `זה צד אחד של הוויכוח הפילוסופי המקובל, ה"ריאליזם" המטאפיזי. הוא מוסיף לעולם "מעבר" שאיש לא פגש.` },
+          { label: `לא נכון`, text: `זה הצד השני. גם הוא משחק באותו משחק ומשיב לאותה שאלה, רק בשלילה.` },
+          { label: `הטענה לא עושה עבודה`, text: `זו "האפשרות השלישית" של ויטגנשטיין: שלילת הלגיטימיות של עצם הדיון. הספר אינו קובע שאין דבר־כשלעצמו וגם לא שהוא נסתר. הביטוי פשוט יוצא ממחזור השימוש, כמו כל מילה שאינה עושה עבודה (פרקים 18, 24).`, right: true }
+        ],
+        ladder: `גם המילים של הספר עצמו הן פיגום זמני: "הוא חייב, כביכול, לזרוק את הסולם לאחר שטיפס עליו" (טרקטטוס, 6.54). הן לא מטאפיזיקה חדשה, רק דרך לנקות את התמונות הישנות.`
+      },
+      fly: {
+        ch: "19",
+        title: `הפילוסוף כמטפל`,
+        text: `הזבוב הלכוד הוא המתפלסף. הוא מנסה לצאת דרך הדפנות השקופות ולא מבין מדוע הוא נחבט שוב ושוב. הפתח היה פתוח שם תמיד.`,
+        button: `הראה לזבוב את הדרך`,
+        after: `השחרור אינו משהו שאפשר לכפות, אלא הזמנה. הצנצנת פתוחה; איש אינו נדחף החוצה.`,
+        quote: `מהי מטרתך בפילוסופיה? – להראות לזבוב איך לצאת מהצנצנת.`
+      }
+    },
+
+    /* ======================= חלק ג' ======================= */
+    {
+      id: "c",
+      letter: "ג",
+      name: "השחרור",
+      doorQuestion: "מה נשאר מהשאלות?",
+      still: { src: "img/c.jpg", alt: "רחוב עירוני באור שחר, מבעד לפתח" },
+      chapters: "פרקים 20-35",
+      lead: `חלק ג' חוזר אל השאלות של חלק א' ואל שאלות נוספות, ומביט בהן מהאמצע, בארבעה שערים: הידיעה, העולם, האדם והערך. הבעיות הגדולות לא נפתרות כאן. הן מתפוגגות.`,
+      epigraph: {
+        text: `מהי מטרתך בפילוסופיה? – להראות לזבוב איך לצאת מהצנצנת.`,
+        source: `לודוויג ויטגנשטיין, חקירות פילוסופיות`
+      },
+      howTo: `ארבעה שערים. בכל שאלה שלושה שלבים: השאלה כפי שהיא נראית מהצד, החזרה לאמצע, ומה נשאר. היכן שהשאלה עלתה כבר במבוך, יש חוט חזרה אליו.`,
+      gates: [
+        {
+          key: "ידיעה",
+          title: `שער ראשון: שיבת הידיעה`,
+          cards: [
+            {
+              id: "c20", ch: "20", from: ["a7", "a9"],
+              q: `האם הידיעה זקוקה ליסוד?`,
+              side: `הפילוסופיה מפצלת בין ה"סכֶמה" שבידינו לבין העולם, ומחפשת גשר: "פירמידה הפוכה" של ידע שתעמוד על קודקוד צר של יסוד ודאי. אבל כל מה שאמור לשמש גשר הוא כבר חלק מהסכֶמה.`,
+              middle: `עצם הדרישה להצדקה כבר מניחה פרקטיקה של הצדקה. במקום הספינה בלב ים, ויטגנשטיין מציע את מודל הנהר, לא כתמונה נכונה יותר אלא ככלי לשחרור: ההצדקה והידיעה, התבונה והניסיון, הם זרמים בנהר הפרקטיקה. איננו עומדים מחוץ לנהר ושואלים להיכן לקפוץ; אנחנו כבר בתוכו.`,
+              remains: `הרגרסיה, המעגליות והעצירה השרירותית הן מאפיינים של חיפוש מחוץ לפרקטיקה. מבפנים, אין כאן קושי.`
+            },
+            {
+              id: "c21", ch: "21",
+              q: `מהי האמת?`,
+              side: `מחפשים לאמת מהות נסתרת, משהו שיאשר את העובדות מבחוץ. ובלעדיה נדמה שנשארנו עם "הכול הולך".`,
+              middle: `האמת אינה מהות שיש למצוא, והאפשרות לטעות כבר מובנית בפרקטיקה: אנו מאמצים עובדות, דורשים הוכחה לאחרות, מתווכחים, מגלים שטעינו ומתקנים.`,
+              remains: `ההבדל בין טענה שעמדה בבדיקה לטענה שנפלה בה ברור ועומד בתוך החיים, ומעולם לא היה בו קושי.`
+            },
+            {
+              id: "c22", ch: "22", from: ["a8"],
+              q: `מאין בא ההכרח של הלוגיקה?`,
+              side: `הלוגיקה נדמתה כדבר הניצב מעבר לפרקטיקה, הכלי שאמור לאשר ולהבטיח את מהלכי המחשבה, הכרח קוסמי.`,
+              middle: `כשמבינים שהכול מתחיל מהפרקטיקה, הלוגיקה מצטרפת אל האמת, הידיעה וההצדקה: כלים מעשיים בתוך האמצע, ולא שמות של ישויות מטאפיזיות.`,
+              remains: `הלוגיקה אינה מתרוקנת מכוחה וממשיכה לעבוד בדיוק כמו תמיד. לא הועם זוהרה, רק סולקו ממנה המיתוסים.`
+            },
+            {
+              id: "c23", ch: "23", from: ["a1"],
+              q: `אז אולי בכל זאת הכול חלום?`,
+              side: `הספקנות הרדיקלית, שאיתה נפתח הספר, דורשת ודאות מוחלטת לפני שמותר לדעת משהו.`,
+              middle: `הטלת ספק טפילית לידיעה. היא מובנת רק על רקע של עובדות ואמיתות. ספק שמכוון אל הכול בבת אחת מבטל את משחק־השפה של ה"ודאות", ואיתו את המובן של המילים שלו עצמו.`,
+              remains: `איננו יודעים הכול, ולעיתים עולים בנו ספקות. הוודאות והספק ממשיכים לעבוד כמו תמיד: כלים לניווט בעולם שאנחנו כבר חלק ממנו.`
+            }
+          ]
+        },
+        {
+          key: "עולם",
+          title: `שער שני: שיבת העולם`,
+          cards: [
+            {
+              id: "c24", ch: "24",
+              q: `מה יש מאחורי התופעות?`,
+              side: `המבט־מהצד מפצל בין "התופעות" לבין "העולם עצמו", ושואל אם יש דבר־כשלעצמו מאחורי מה שמופיע.`,
+              middle: `הספר אינו קובע שאין דבר־כשלעצמו, וגם לא שהוא נסתר. הביטויים האלה יוצאים ממחזור השימוש, כמו כל מילה שאינה עושה עבודה.`,
+              remains: `העולם כפי שהיה תמיד: השולחן והכיסא, ההרים והגבעות, בני האדם ובעלי החיים. רק בלי היומרה לייצר תמונה של הכול.`
+            },
+            {
+              id: "c25", ch: "25", from: ["a3"],
+              q: `מה קיים "מעבר", מה שאיש אינו רואה?`,
+              side: `העצם שמאחורי השולחן, העבר, הגלקסיה הרחוקה: כל אלה נראים כ"מעבר" שצריך לאשר את קיומו.`,
+              middle: `במקום להכריע, "האפשרות השלישית": לא להתחייב לקיום־מעבר ולא לשלול אותו, אלא להוציא ממחזור השימוש את צרורות־המילים שהפסיקו לעבוד.`,
+              remains: `אנו מדברים על דינוזאורים, על נפוליאון ועל השמש שתזרח מחר, בלי קושי. משתחררים רק מהכפייתיות לשאול שאלות חסרות פשר.`
+            },
+            {
+              id: "c26", ch: "26", from: ["a5", "a2"],
+              q: `ריאליזם או סוליפסיזם?`,
+              side: `הוויכוח אם העולם הוא "רק סרט" או שהוא קיים "באמת". בקצה, העולם הוא "רק חוויה שלי".`,
+              middle: `שני הצדדים מביטים־מהצד, ושניהם אינם אומרים דבר. מה שנשאר אינו עמדה שלישית על העולם, אלא העולם עצמו כפי שאנו חיים בו.`,
+              remains: `חתולים מתרוצצים, כבישים מסוכנים, ואנשים שעליהם אנו חומלים, בלי הסרח־העודף המטאפיזי. בלשונה של קורה דיימונד: "רוח ריאליסטית".`
+            },
+            {
+              id: "c27", ch: "27", from: ["a4", "a5"],
+              q: `העולם סופי או אינסופי?`,
+              side: `זום־אאוט וזום־אין שוב נתקעים בדילמה שאין ממנה מוצא, ומכיוון שפרק 26 ויתר על הסוליפסיזם, אי אפשר עוד לברוח אל התודעה.`,
+              middle: `השאלה "מה גודלו?" עובדת היטב על שולחן, על שדה ועל גלקסיה. כשמעתיקים אותה אל "העולם כולו", אין לה שימוש. לא גילינו שהעולם סופי ולא שהוא אינסופי; גילינו שהשאלה אינה עושה דבר.`,
+              remains: `התפוח עדיין ניתן לחלוקה, המספרים ממשיכים, והמדע חוקר רחוק ועמוק יותר. הדברים מתחילים מהאמצע, ומשם אפשר ללכת רחוק ככל שנצליח.`
+            },
+            {
+              id: "c28", ch: "28",
+              q: `האם המדע חושף את מהות המציאות?`,
+              side: `"מדעניזם": מכך שהמדע מצליח לנבא ולשלוט, מסיקים שהוא חושף את המהות הנסתרת ושמותר לו לקבוע תמונה מוחלטת של העולם.`,
+              middle: `המדעי מבוסס על היומיומי, לא להפך. בלי צורת־חיים שבה המדען מדבר על עולם ועל מעבדה, לא יכלה להיווצר שפת מדע.`,
+              remains: `מדע בלי מדעניזם, פיזיקה בלי מטאפיזיקה. העולם חוזר להיות התרחשות מאוחה וחיה, ולא אוסף אובייקטים על מסך התודעה.`
+            }
+          ]
+        },
+        {
+          key: "אדם",
+          title: `שער שלישי: שיבת האדם`,
+          cards: [
+            {
+              id: "c29", ch: "29", from: ["a6"],
+              q: `מהו האני?`,
+              side: `מחפשים את האני כעוד "דבר": הצופה הערטילאי, העצם־החושב של דקארט.`,
+              middle: `השאלה נולדה מבלבול דקדוקי. המילים "אני" ו"כואב לי" אינן מצביעות על עצמים; הן חלק מפעילות הבעתית בתוך חיים אנושיים משותפים.`,
+              remains: `השחרור אינו הופך אותנו ל"מכונות ביולוגיות". הוא מחזיר את האנושיות הפשוטה והמובנת מאליה.`
+            },
+            {
+              id: "c30", ch: "30", from: ["a2"],
+              q: `איך אדע שלאחר יש נפש?`,
+              side: `מתחילים כסובייקט מבודד, ומנסים לבנות גשר של היסק אל נפשו של האחר.`,
+              middle: `איני מתחיל את חיי כסובייקט מבודד, אלא כאיש בין אנשים. קודם מתנהגים אל האחר כנפש, ורק אז לומדים לדבר על נפש. "נסה נא פעם – במקרה אמיתי – להטיל ספק בחרדה, בכאב, של הזולת."`,
+              remains: `החיים המשותפים הם הנתון ואינם זקוקים להוכחה. היחס לאחר כנפש אינו תאוריה שאפשר להפריך, אלא צורת המבט הראשונית שלנו.`
+            },
+            {
+              id: "c31", ch: "31",
+              q: `חופש או דטרמיניזם?`,
+              side: `האם האדם הוא המקור למעשיו, או רק חוליה בשרשרת סיבתית אדישה? נדמה שהאחריות תלויה ב"חור" בשרשרת.`,
+              middle: `הסיבתיות והרצון הם שני משחקי־שפה שמשלימים זה את זה בתוך האמצע. כשאנו משבחים או גוערים, איננו בודקים אם נמצא חור בשרשרת, אלא אם האדם פעל ביודעין ואם נכפה עליו.`,
+              remains: `האחריות נותרת על כנה. הגוף והנפש, הבחירה והסיבתיות, הם היבטים של אותה התרחשות.`
+            }
+          ]
+        },
+        {
+          key: "ערך",
+          title: `שער רביעי: שיבת הערך`,
+          isNew: `נושא חדש: הערכים לא נדונו עד עתה בספר.`,
+          cards: [
+            {
+              id: "c32", ch: "32",
+              q: `מה הופך מעשה לטוב?`,
+              side: `היקום נראה אדיש; אין במעבדה מולקולה של צדק. ובכל זאת, המוסר אינו "סתם" רגש או מנהג. מחפשים את ה"דבר" שהוא הטוב ואת מה שמעניק לחובה את תוקפה.`,
+              middle: `החיפוש עצמו נולד מהמבט־מהצד. הקרע בין עובדות לערכים לא היה משהו שמצאנו, אלא משהו שהשלכנו על העולם.`,
+              remains: `לא מוסר יחסי ולא "רק" רגשי. המוסר אינו עוגן שמחוץ לחיים, אלא ניווט מתוך האמצע.`
+            },
+            {
+              id: "c33", ch: "33",
+              q: `האם היופי בעין המתבונן?`,
+              side: `שיפוט של יופי נשמע כטענה על היצירה, לא כדיווח על טעם. אז מחפשים את התכונה הנסתרת "יפה".`,
+              middle: `היופי אינו תכונה נסתרת מאחורי הדברים, וגם אינו מצב פנימי של המתבונן. הוא זורח במפגש, באמצע.`,
+              remains: `האסתטיקה אינה תוספת לראייה, אלא אספקט של העולם.`
+            },
+            {
+              id: "c34", ch: "34",
+              q: `מה משמעות החיים?`,
+              side: `"בשביל מה כל זה?" נשאל על המכלול כולו, ונדמה כטענה על החיים עצמם, שמחכה לתשובה.`,
+              middle: `המשמעות אינה דבר בעולם, אלא אופן ראייה של העולם: האור הנוגה על המכלול. ילד השקוע במשחק ואדם השקוע ביצירה אינם תופסים את מה שלפניהם כטור של זמנים.`,
+              remains: `התשובה אינה ידע חדש, אלא היעלמות הקושי. "כמובן שלא תישאר אז שום שאלה, וזוהי, בדיוק, התשובה."`
+            },
+            {
+              id: "c35", ch: "35", from: ["a4", "a9"],
+              q: `ומה עם האלוהי?`,
+              side: `אלוהי הפילוסופים מגויס לסתום את ה"חורים" המטאפיזיים: לעצור את שרשרת הסיבות, המרחבים והזמנים ("מקומו־של־עולם"), לעצור את שרשרת ההצדקות ("מכונן האמת"), ולעגן את הערכים: מה שהוא מצווה הוא הטוב, ומה שהוא מתכנן מעניק לחיים משמעות. אבל הוא רק שם חדש לעצירה שאנו כבר מבצעים, והאנשה של המבט־מהצד עצמו.`,
+              middle: `מי שאומר "ניצלתי בנס" אינו מעלה השערה אמפירית; הוא ממקם את מה שקרה באופק של פליאה, משמעות ותודה. כמו ציור שזורח פתאום באספקט אחר, בלי שנוסף בו קו.`,
+              remains: `נוכחות הפלא באמצע החיים. ועל "הצד", שתיקה: לא שתיקה של יראה מול סוד, אלא הבנה פשוטה שאין שם מה לומר.`
+            }
+          ]
+        }
+      ]
+    },
+
+    /* ======================= חלק ד' ======================= */
+    {
+      id: "d",
+      letter: "ד",
+      name: "ההתבהרות",
+      doorQuestion: "עם מה נשארים?",
+      still: { src: "img/d.jpg", alt: "יד מבוגרת על שולחן עץ ליד ספל קפה מהביל, באור בוקר" },
+      chapters: "פרקים 36-37",
+      lead: `חלק ד' מביט לאחור ומחבר את החוטים. בכל ארבע החזיתות חזרה אותה תבנית, והכישלון לא היה מקרי: הוא מובנה בפוזיציה עצמה. ואז נשאלת השאלה ההפוכה: אם אין מבט־מהצד, מה כן אפשר לומר?`,
+      epigraph: {
+        text: `המובן־מאליו איננו תמימות שיש להתגבר עליה, אלא הקרקע שהכול עומד עליה.`,
+        source: `מסוף הספר`
+      },
+      sections: [
+        {
+          title: `פרקים 36-37: ההתבהרות`,
+          note: `מבט לאחור על המהלך כולו, ומה נשאר בסופו.`,
+          cards: [
+            {
+              id: "d36", ch: "36",
+              q: `הדברים מתחילים מהאמצע`,
+              steps: [
+                ["חתירה אל הקצוות", `חיפוש נקודת משען מוחלטת, יסוד בלתי מעורער או מהות נסתרת. האמצע המעשי נראה לא מספיק.`],
+                ["קריסה בלתי נמנעת", `כל ניסיון להגיע אל הקצה מוביל לרגרסיה אינסופית. הכישלון מובנה במהלך עצמו.`],
+                ["חזרה אל האמצע", `אין מה לחפש אי־שם. האמצע אינו משהו מוגבל שיש להביט מעבר לו, אלא כל מה שצריך ויש.`],
+                ["ארבע החזיתות", `הידיעה: מפירמידה הפוכה לנהר הפרקטיקה. העולם: מהעצם הנסתר אל ההתרחשות. האדם: מהמבצר הפנימי אל הקהילה. הערכים: מאידיאלים קפואים אל חיים רוויי משמעות.`],
+                ["שתי החריגות", `החריגה מהאמצע נעה בשני וקטורים: אינפלציה מוסיפה ישים מעבר לעולם המוכר, ורדוקציה מעמידה אותו על עקרונות מצומצמים.`]
+              ]
+            },
+            {
+              id: "d37", ch: "37",
+              q: `עם מה נשארים?`,
+              steps: [
+                ["השיבה אל היומיומי", `כשיורד גשם, פשוט יורד גשם. השמש זורחת בבוקר, הים בצבע תכלת, והמטוס טס בשמיים.`],
+                ["הסיום", `הספר נפתח בחנווני שתחושת המובן־מאליו שלו נראתה כחידה, ובחיוך של תינוק שנדמה היה כי תמונת הגלקסיות הרחוקות מאיינת אותו. הוא מסתיים בהבנה שהמובן־מאליו איננו תמימות שיש להתגבר עליה, אלא הקרקע שהכול עומד עליה.`]
+              ]
+            }
+          ]
+        },
+        {
+          title: `נספחים`,
+          note: `שני נספחים אחרי סוף הספר: מבט אל מאחורי הקלעים, ומקרה מבחן אחד למתודה.`,
+          cards: [
+            {
+              id: "na", ch: "נספח א'",
+              q: `מאחורי הקלעים של הספר`,
+              steps: [
+                ["פרדוקס הסולם", `האם הספר עצמו נופל למלכודת הנונסנס שביקש לפרק? השאלה חושפת את המתח בין שתי תקופות הגותו של ויטגנשטיין, ואת המוצא שמציעה הגותו המאוחרת.`],
+                ["הבחירה הפרשנית", `הגותו של ויטגנשטיין פתוחה לפרשנויות מתחרות. הספר קורא אותו כמטפל לשוני, קריאה המכונה "קוויטיזם", ומסביר מדוע.`],
+                ["קאנט", `רוחו של קאנט מרחפת מאחורי הספר כולו. הנספח חולק לו את הכבוד הראוי, ומבהיר מדוע, בנקודה המכריעה, הספר נפרד ממנו.`]
+              ]
+            },
+            {
+              id: "nb", ch: "נספח ב'",
+              q: `מותר האדם? דיון פתוח על בינה מלאכותית`,
+              steps: [
+                ["הדילמה", `הבינה המלאכותית שוברת את הספקטרום המוכר: היא שותפה איתנו לגמרי בשפה, ונפרדת מאיתנו לגמרי בציר הביולוגי וההתנהגותי. מכאן שתי אינטואיציות סותרות: למה להדיר אותה, ואיך אפשר להשוות.`],
+                ["השאלות הישנות", `האם יש "מישהו" שם בפנים? והאם היא מגיעה לאמת נסתרת, מעבר לכל הטיה אנושית? שתי השאלות מהדהדות את שאלות התודעה והאמת מהספר, ושתיהן כרוכות במבט־מהצד.`],
+                ["מהאמצע", `לא גילוי עצם־חושב אצל האחר מכונן את החמלה אליו, אלא להפך: היחס שלנו לאחר מכונן את מושג הנפש. אם המכונה תהפוך לחלק מצורת־חיינו, היחס אליה ישתנה, וייתכן שהמילה "נפש" תימתח ותכלול גם אותה (פרקים 30, 31, 35).`]
+              ]
+            }
+          ]
+        }
+      ],
+      pattern: {
+        ch: "36",
+        steps: [
+          { name: `חתירה אל הקצוות`, text: `חיפוש נקודת משען מוחלטת, יסוד בלתי מעורער או מהות נסתרת. האמצע המעשי נראה לא מספיק.` },
+          { name: `קריסה בלתי נמנעת`, text: `כל ניסיון להגיע אל הקצה מוביל לרגרסיה אינסופית. הכישלון מובנה במהלך עצמו.` },
+          { name: `חזרה אל האמצע`, text: `אין מה לחפש אי־שם. האמצע אינו משהו מוגבל שיש להביט מעבר לו, אלא כל מה שצריך ויש.` }
+        ],
+        fronts: [
+          { key: `הידיעה`, from: `פירמידה הפוכה`, to: `נהר הפרקטיקה` },
+          { key: `העולם`, from: `העצם הנסתר`, to: `ההתרחשות` },
+          { key: `האדם`, from: `המבצר הפנימי`, to: `הקהילה` },
+          { key: `הערכים`, from: `אידיאלים קפואים`, to: `חיים רוויי משמעות` }
+        ]
+      },
+      sorter: {
+        ch: "36",
+        intro: `החריגה מהאמצע נעה בשני וקטורים. אינפלציה מוסיפה ישים פנטסטיים מעבר לעולם המוכר. רדוקציה מבטלת את העולם המוכר ומעמידה אותו על עקרונות מצומצמים. מיינו:`,
+        items: [
+          { label: `עולם־האידיאות של אפלטון`, kind: "inf", ch: "16" },
+          { label: `האני כ"צרור תופעות"`, kind: "red", ch: "6" },
+          { label: `הדבר־כשלעצמו של קאנט`, kind: "inf", ch: "6, 24" },
+          { label: `העולם כולו מתקיים רק באני`, kind: "red", ch: "2-3" },
+          { label: `האני־החושב של דקארט וברקלי`, kind: "inf", ch: "1, 2, 5, 6, 29" },
+          { label: `העולם הוא תופעות בלבד`, kind: "red", ch: "24" },
+          { label: `הערכים כישות שמימית`, kind: "inf", ch: "32-34" },
+          { label: `אלוהים`, kind: "inf", ch: "35" },
+          { label: `האמת והערכים הם מוסכמה בלבד`, kind: "red", ch: "21, 32-34" }
+        ],
+        outro: `שני הווקטורים מנסים לארגן את העולם מחדש במבט־מהצד. השמש זורחת בבוקר: עובדה פשוטה, שאינה צריכה שום "כתר", לא "אמת אבסולוטית" ולא "אמת יחסית".`
+      },
+      ending: {
+        ch: "37",
+        lines: [
+          `כשיורד גשם, פשוט יורד גשם.`,
+          `השמש זורחת בבוקר, הים בצבע תכלת, והמטוס טס בשמיים.`,
+          `הספר נפתח בחנווני שתחושת המובן־מאליו שלו נראתה כחידה, ובחיוך של תינוק שנדמה היה כי תמונת הגלקסיות הרחוקות מאיינת אותו.`,
+          `הוא מסתיים בהבנה שהמובן־מאליו איננו תמימות שיש להתגבר עליה, אלא הקרקע שהכול עומד עליה.`
+        ]
+      }
+    }
+  ]
+};
+</script><script>
+/* הדברים מתחילים מהאמצע – מנוע האתר. התוכן כולו ב-content.js */
+(function () {
+  const S = window.SITE;
+  const app = document.getElementById("app");
+  const rooms = S.rooms;
+  const byId = Object.fromEntries(rooms.map(r => [r.id, r]));
+  const M = S.mumche; byId.m = M;
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const DOOR_COL = { a: "#0f4d5a", b: "#21717d", c: "#5ea6ae", d: "#bfe0e2" }; /* מטורקיז עמוק לבהיר: מהמבוך אל ההתבהרות */ /* מסגול הכריכה לאפור בהיר: מתבהרות מהמבוך אל ההתבהרות */
+  const DOOR_INK = { a: "#ffffff", b: "#ffffff", c: "#06262e", d: "#06262e" };
+
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const store = {
+    get(k) { try { return JSON.parse(localStorage.getItem("hm:" + k)); } catch (e) { return null; } },
+    set(k, v) { try { localStorage.setItem("hm:" + k, JSON.stringify(v)); } catch (e) {} }
+  };
+  const visited = new Set(store.get("visited") || []);
+  const opened = new Set(store.get("opened") || []);
+  function markOpened(id) {
+    if (opened.has(id)) return; opened.add(id); store.set("opened", [...opened]);
+    const r = cardRoom[id] && cardRoom[id].room, el = r && document.querySelector(`[data-prog="${r}"]`);
+    if (el) el.textContent = progText(r);
+  }
+  function progText(rid) {
+    const ids = Object.keys(cardRoom).filter(k => cardRoom[k].room === rid);
+    return ids.length ? `${ids.filter(k => opened.has(k)).length}/${ids.length}` : "";
+  }
+
+  /* חלק ב', שער ראשון: כרטיסי ההיפוך נפתחים בשלבים, כמו הקוביות של חלק א' */
+  rooms.forEach(r => (r.sections || []).forEach(s => {
+    if (s.flips && !s.cards) s.cards = s.flips.map(x => ({
+      id: "b" + x.ch, ch: x.ch, q: x.back, nextLabel: "שינוי הפרספקטיבה",
+      steps: [["התמונה הרגילה", x.front], ["ההיפוך", x.text]]
+    }));
+  }));
+
+  /* איפה יושב כל כרטיס (לחוטים בין החדרים) */
+  const cardRoom = {};
+  M.cards.forEach(c => cardRoom[c.id] = { room: "m", card: c });
+  rooms.forEach(r => {
+    (r.sections || []).forEach(s => (s.cards || []).forEach(c => cardRoom[c.id] = { room: r.id, card: c }));
+    (r.gates || []).forEach((g, gi) => g.cards.forEach(c => cardRoom[c.id] = { room: r.id, card: c, gate: gi }));
+  });
+
+  function buyBtn(extra = "") {
+    if (S.buyUrl) return `<a class="btn btn-buy ${extra}" href="${esc(S.buyUrl)}" target="_blank" rel="noopener">לרכישת הספר</a>`;
+    return `<span class="btn btn-buy ${extra}" aria-disabled="true">הספר – בקרוב</span>`;
+  }
+
+  const FIGURE = `
+  <svg viewBox="0 0 100 220" aria-hidden="true">
+    <g class="fig">
+      <circle cx="50" cy="27" r="13"/>
+      <path d="M44 38h12v8H44z"/>
+      <path d="M50 44c-12 0-21 4-24 10l-5 52c-1 30 1 70 4 95h50c3-25 5-65 4-95l-5-52c-3-6-12-10-24-10z"/>
+      <path d="M36 199h11v19H36zM53 199h11v19H53z"/>
+    </g>
+  </svg>`;
+
+  /* שורת הפתיחה: נשארת למעלה גם כשנכנסים לחדר */
+  function homeTopHTML(active) {
+    return `
+    <div class="hero">
+      <header class="ht">
+        <h1>${esc(S.title)}</h1>
+        <p class="ht-sub">${esc(S.subtitle)}</p>
+        <p class="ht-basis">${esc(S.basis)}</p>
+        <p class="ht-author">${esc(S.author)}</p>
+      </header>
+      <div class="stage">
+        <div class="doors">${rooms.map(r => `
+          <div class="door-wrap">
+            <button class="door ${visited.has(r.id) ? "visited" : ""} ${r.id === active ? "open" : ""}" ${r.id === active ? 'aria-current="page"' : ""} data-go="${r.id}" style="--col:${DOOR_COL[r.id]};--ink:${DOOR_INK[r.id]}"
+              aria-label="חלק ${r.letter}: ${esc(r.name)}. ${esc(r.doorQuestion)}">
+              <span class="frame"></span>
+              <span class="panel"><span class="glyph">${r.letter}</span></span>
+            </button>
+            <div class="door-label"><b>${esc(r.name)}</b><span>${esc(r.doorQuestion)}</span></div>
+          </div>`).join("")}
+        </div>
+      </div>
+      ${active ? `<div class="beam" aria-hidden="true" style="--beam:${DOOR_COL[active]}"></div>` : `<div class="hero-buy">${buyBtn()}</div>`}
+    </div>`;
+  }
+  function filmFloatHTML() {
+    return S.videoFile || S.youtubeId ? `
+    <div class="film-float" id="filmFloat" hidden>
+      <button class="film-float-open" id="openFilm" aria-label="צפו בסרט על הספר">
+        <span class="film-thumb" style="background-image:url('video-poster.jpg')"><span class="play-sm" aria-hidden="true"></span></span>
+        <span class="film-float-txt"><b>צפו בסרט על הספר</b><small>דקה וחצי</small></span>
+      </button>
+      <button class="film-float-x" id="hideFloat" aria-label="הסתרה">×</button>
+    </div>` : "";
+  }
+  function filmPopHTML() {
+    return S.videoFile || S.youtubeId ? `
+    <div class="film-pop" id="filmPop" role="dialog" aria-modal="true" aria-label="${esc(S.video.heading)}" hidden>
+      <div class="film-card">
+        <button class="film-x" id="closeFilm" aria-label="סגירה">×</button>
+        <div class="video-box" id="videoBox">
+          ${S.youtubeId
+            ? `<iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(S.youtubeId)}?rel=0" title="${esc(S.video.heading)}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`
+            : `<video id="film" src="${esc(S.videoFile)}" poster="video-poster.jpg" controls playsinline muted preload="auto"></video>
+               <button class="btn btn-buy film-sound" id="filmSound">🔊 הפעלת קול</button>`}
+        </div>
+        <div class="film-cap">
+          <h2>${esc(S.video.heading)}</h2>
+          <p>${esc(S.video.text)}</p>
+          <button class="link-btn" id="closeFilm2">לדלתות ←</button>
+        </div>
+      </div>
+    </div>` : "";
+  }
+  function wireDoors() {
+    app.querySelectorAll(".door").forEach(btn => btn.addEventListener("click", () => openDoor(btn)));
+  }
+
+  /* ================= הבית ================= */
+  function renderHome() {
+    document.title = S.title;
+    const doneD = visited.has("d");
+    app.innerHTML = `
+    <div class="home">
+${homeTopHTML(null)}
+
+      <section class="band">
+        <div class="wrap">
+          <h2>${esc(M.name)}</h2>
+          <p class="ask-lead">${esc(M.lead)}</p>
+          <div class="ask-grid">${M.cards.map(c => `
+            <a class="ask-tile" href="#${c.id}"><span class="ch">${/^\d/.test(c.ch) ? "פרק " : ""}${esc(c.ch)}</span><b>${esc(c.q)}</b><span class="ask-go">לשאול ←</span></a>`).join("")}</div>
+        </div>
+      </section>
+
+      <footer class="foot">© ${esc(S.author)} · תשפ"ו–2026${S.mapUrl ? ` · <a href="${esc(S.mapUrl)}" target="_blank" rel="noopener">מפת הספר המלאה</a>` : ""}</footer>
+    </div>
+    ${filmFloatHTML()}${filmPopHTML()}`;
+
+    wireDoors(); wireFilm(); window.onresize = null;
+  }
+
+  /* הסרט: חלון קטן צף שקופץ בגלילה; לחיצה פותחת את הנגן */
+  function wireFilm() {
+    const pop = document.getElementById("filmPop"); if (!pop) return;
+    const film = document.getElementById("film"), sound = document.getElementById("filmSound");
+    const open = (withSound) => {
+      pop.hidden = false; document.body.classList.add("film-open");
+      if (film) {
+        if (withSound) { film.muted = false; if (sound) sound.hidden = true; }
+        const p = film.play(); if (p && p.catch) p.catch(() => {});
+      }
+      document.getElementById("closeFilm").focus({ preventScroll: true });
+    };
+    const close = () => { pop.hidden = true; document.body.classList.remove("film-open"); if (film) film.pause(); };
+    document.getElementById("openFilm").addEventListener("click", () => open(true));
+    document.getElementById("closeFilm").addEventListener("click", close);
+    document.getElementById("closeFilm2").addEventListener("click", close);
+    pop.addEventListener("click", e => { if (e.target === pop) close(); });
+    document.onkeydown = e => { if (e.key === "Escape" && !pop.hidden) close(); };
+    if (sound) sound.addEventListener("click", () => { film.muted = false; film.currentTime = 0; film.play(); sound.hidden = true; });
+    if (film) film.addEventListener("volumechange", () => { if (!film.muted && sound) sound.hidden = true; });
+    /* החלון הקטן קופץ בגלילה ולא תופס מקום בדף */
+    const fl = document.getElementById("filmFloat");
+    let dismissed = false; try { dismissed = sessionStorage.getItem("hm:float") === "1"; } catch (e) {}
+    document.getElementById("hideFloat").addEventListener("click", () => {
+      fl.hidden = true; dismissed = true; try { sessionStorage.setItem("hm:float", "1"); } catch (e) {}
+    });
+    if (window._filmScroll) window.removeEventListener("scroll", window._filmScroll);
+    window._filmScroll = () => { if (!dismissed && fl.hidden && window.scrollY > 80) fl.hidden = false; };
+    window.addEventListener("scroll", window._filmScroll, { passive: true });
+    if (!dismissed) setTimeout(() => { if (!dismissed) fl.hidden = false; }, reduce ? 0 : 1200);
+
+  }
+
+  function openDoor(btn) {
+    const id = btn.dataset.go;
+    if (current === id) { scrollToRoom(); return; }
+    app.querySelectorAll(".door.open").forEach(d => d.classList.remove("open"));
+    btn.classList.add("open");
+    setTimeout(() => { location.hash = id; }, reduce ? 0 : 380);
+  }
+  /* האור יוצא מהדלת הפתוחה אל החלק שנפתח מתחתיה */
+  function placeBeam(id) {
+    const d = document.querySelector(".home-strip .door.open"), hero = document.querySelector(".home-strip .hero"), room = document.querySelector(".room");
+    if (!d || !hero || !room) return;
+    const dr = d.getBoundingClientRect(), hr = hero.getBoundingClientRect(), rr = room.getBoundingClientRect();
+    const x = dr.left + dr.width / 2;
+    hero.style.setProperty("--bx", (x - hr.left) + "px");
+    hero.style.setProperty("--bt", (dr.bottom - hr.top - 6) + "px");
+    hero.style.setProperty("--bw", dr.width + "px");
+    room.style.setProperty("--rx", (x - rr.left) + "px");
+    room.style.setProperty("--beam", DOOR_COL[id]);
+    hero.style.setProperty("--lit-end", getComputedStyle(room).getPropertyValue("--lit"));
+  }
+  function scrollToRoom() {
+    /* גוללים כך שהדלת הפתוחה עדיין נראית למעלה, והחלק המואר יוצא ממנה */
+    const d = document.querySelector(".home-strip .door.open"), el = document.querySelector(".room");
+    if (!el) return;
+    const y = d ? d.getBoundingClientRect().top + window.scrollY - 12 : el.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({ top: y, behavior: reduce ? "auto" : "smooth" });
+  }
+
+  /* ================= רכיבי חדר ================= */
+  function topbar(r) {
+    return `
+    <div class="topbar"><div class="wrap">
+      <a class="home-link" href="#">→ הדלתות</a>
+      <button class="crumb" id="crumb" aria-controls="rail" aria-expanded="false">
+        <span class="crumb-room">${r.letter} · ${esc(r.name)}</span><span class="crumb-sec" id="crumbSec"></span><span class="crumb-ico" aria-hidden="true">▾</span>
+      </button>
+      ${buyBtn()}
+    </div></div>`;
+  }
+
+  /* מפת המיקום: הדלתות, ובחדר הנוכחי השערים שלו */
+  function railHTML(r) {
+    return `
+    <aside class="rail" id="rail" aria-label="איפה אני בספר">
+      <a class="rail-home" href="#"><span class="rail-dot"></span>הדלתות</a>
+      <p class="rail-book">${esc(S.title)}</p>
+      <ol class="rail-rooms">${rooms.map(x => `
+        <li class="${x.id === r.id ? "here" : ""} ${visited.has(x.id) ? "seen" : ""}" style="--rc:${DOOR_COL[x.id]};--rk:${DOOR_INK[x.id]}">
+          <a href="#${x.id}" ${x.id === r.id ? 'aria-current="page"' : ""}>
+            <span class="rail-letter">${x.letter}</span>
+            <span class="rail-name">${esc(x.name)}<small>${esc(x.chapters)}</small></span>
+          </a>
+          ${x.id === r.id ? `<ol class="rail-secs" id="railSecs"></ol>` : ""}
+        </li>`).join("")}
+      </ol>
+      <a class="rail-mumche ${r.id === "m" ? "here" : ""}" href="#m"><span class="rail-letter">?</span><span class="rail-name">${esc(M.name)}<small>${M.cards.length} שאלות</small></span></a>
+      ${r.id === "m" ? `<ol class="rail-secs" id="railSecs"></ol>` : ""}
+      <div class="rail-buy">${buyBtn()}</div>
+    </aside>`;
+  }
+
+  function splitTitle(t) {
+    const i = t.indexOf(":");
+    return i > 0 ? [t.slice(0, i).trim(), t.slice(i + 1).trim()] : ["", t.trim()];
+  }
+
+  function buildRail(r) {
+    const list = document.getElementById("railSecs"), crumbSec = document.getElementById("crumbSec");
+    const rail = document.getElementById("rail"), crumb = document.getElementById("crumb");
+    const setCrumb = t => { crumbSec.textContent = t ? " › " + t : ""; };
+    const closeRail = () => { rail.classList.remove("open"); crumb.setAttribute("aria-expanded", "false"); };
+    crumb.addEventListener("click", () => {
+      const o = rail.classList.toggle("open"); crumb.setAttribute("aria-expanded", o);
+    });
+    rail.addEventListener("click", e => { if (e.target.closest("a, button")) closeRail(); });
+    document.querySelector(".room").addEventListener("click", e => { if (e.target.classList.contains("room") && rail.classList.contains("open")) closeRail(); });
+    let items;
+    const secs = [...document.querySelectorAll(".room .section, .room .ending, .room .gate-box")];
+    items = secs.map((s, i) => {
+      s.id = s.id || `sec-${r.id}-${i}`;
+      const h = s.querySelector("h2");
+      let t = s.classList.contains("gate-box") ? s.dataset.title
+        : h ? [...h.childNodes].filter(n => !(n.classList && n.classList.contains("ch"))).map(n => n.textContent).join("").trim() : "הסיום";
+      return { el: s, label: splitTitle(t) };
+    });
+    list.innerHTML = items.map(x => `<li><a href="#" data-railsec="${x.el.id}"><small>${esc(x.label[0])}</small>${esc(x.label[1])}</a></li>`).join("");
+    list.querySelectorAll("[data-railsec]").forEach(a => a.addEventListener("click", e => {
+      e.preventDefault();
+      document.getElementById(a.dataset.railsec).scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+    }));
+    const links = [...list.querySelectorAll("a")];
+    const update = () => {
+      /* השער הפעיל: השורה שנמצאת עכשיו בחלק העליון של המסך. שערים זה לצד זה מסומנים יחד */
+      const y = window.innerHeight * 0.45;
+      const tops = items.map(x => x.el.getBoundingClientRect().top);
+      const above = tops.filter(t => t < y);
+      const rowTop = above.length ? Math.max(...above) : tops[0];
+      const act = tops.map(t => Math.abs(t - rowTop) < 4);
+      const cur = act.indexOf(true);
+      links.forEach((l, i) => l.classList.toggle("on", act[i]));
+      setCrumb(cur >= 0 ? items[cur].label[1] : "");
+    };
+    window.onscroll = update; update();
+  }
+
+  function head(r) {
+    return `
+    <div class="room-band"><header class="wrap room-head">
+      <h1>${r.id === "m" ? esc(r.name) : `חלק ${r.letter}' – ${esc(r.name)}`}${r.id === "m" ? "" : `<small>(${esc(r.chapters)})</small>`}</h1>
+      <p class="lead">${esc(r.lead)}</p>
+    </header></div>
+`;
+  }
+
+  function threadLink(id, prefix) {
+    const t = cardRoom[id]; if (!t) return "";
+    return `<button class="link-btn" data-thread="${id}">${prefix} ${/^\d/.test(t.card.ch) ? "פרק " : ""}${esc(t.card.ch)}: ${esc(t.card.q)} ←</button>`;
+  }
+
+  /* כרטיס שאלה: שלבים נחשפים אחד אחד */
+  function qcard(c, steps, threads, extra = "") {
+    return `
+    <article class="qcard" id="${c.id}" data-steps='${JSON.stringify(steps.map(s => [s[0], s[1]])).replace(/'/g, "&#39;")}'>
+      <button class="qhead" aria-expanded="false">
+        <span class="qt">${esc(c.q)}</span><span class="ch">${/^\d/.test(c.ch) ? "פרק " : ""}${esc(c.ch)}</span>
+      </button>
+      <div class="qbody" hidden>
+        <div class="steps"></div>
+        <button class="btn btn-ghost next ui">${esc(c.nextLabel || "ומה אז?")} ←</button>
+        ${extra ? `<div class="extra" hidden>${extra}</div>` : ""}
+        <div class="threads" hidden>${threads}</div>
+      </div>
+    </article>`;
+  }
+
+  function wireCards(root) {
+    root.querySelectorAll(".qcard").forEach(card => {
+      const steps = JSON.parse(card.dataset.steps);
+      const body = card.querySelector(".qbody"), list = card.querySelector(".steps");
+      const next = card.querySelector(".next"), th = card.querySelector(".threads");
+      let shown = 0;
+      const reveal = () => {
+        if (!steps.length && th.hidden) { next.hidden = true; th.hidden = false; const ex = card.querySelector(".extra"); if (ex) ex.hidden = false; markOpened(card.id); card.classList.add("seen"); fit(); return; }
+        if (shown >= steps.length) return;
+        const [lbl, txt] = steps[shown++];
+        list.insertAdjacentHTML("beforeend", `<div class="step"><span class="lbl">${esc(lbl)}</span><p>${esc(txt)}</p></div>`);
+        if (shown >= steps.length) { next.hidden = true; th.hidden = false; const ex = card.querySelector(".extra"); if (ex) ex.hidden = false; markOpened(card.id); card.classList.add("seen"); }
+        fit();
+      };
+      /* בתוך ריבוע שער: הקוביה נפתחת במקומה ומתרחבת מעל השכנות, בלי להזיז את הרשת */
+      const grid = card.parentElement, inGate = !!card.closest(".gate-box");
+      let ph = null;
+      const fit = () => {
+        if (!ph) return;
+        const need = card.offsetTop + card.offsetHeight - (grid.clientHeight - (parseFloat(grid.style.paddingBottom) || 0));
+        grid.style.paddingBottom = need > 0 ? need + 12 + "px" : "";
+      };
+      const float = on => {
+        if (!inGate) return;
+        if (on) {
+          grid.querySelectorAll(".qcard.float").forEach(o => o !== card && o._close && o._close());
+          ph = document.createElement("div"); ph.className = "qph"; ph.style.height = card.offsetHeight + "px";
+          grid.insertBefore(ph, card); card.classList.add("float"); card.style.top = ph.offsetTop + "px";
+          fit();
+        } else if (ph) {
+          card.classList.remove("float"); card.style.top = ""; ph.remove(); ph = null; grid.style.paddingBottom = "";
+        }
+      };
+      if (opened.has(card.id)) card.classList.add("seen");
+      card.querySelector(".qhead").addEventListener("click", e => {
+        const open = body.hidden;
+        if (open) float(true);
+        body.hidden = !open; card.classList.toggle("open", open);
+        e.currentTarget.setAttribute("aria-expanded", open);
+        if (open && shown === 0 && (steps.length || th.hidden)) reveal();
+        if (!open) float(false); else fit();
+        if (open) setTimeout(() => card.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "nearest" }), 30);
+      });
+      next.addEventListener("click", reveal);
+      card._close = () => { if (!body.hidden) card.querySelector(".qhead").click(); };
+      card._openAll = () => { if (body.hidden) card.querySelector(".qhead").click(); while (shown < steps.length) reveal(); };
+    });
+    root.querySelectorAll("[data-copy]").forEach(b => b.addEventListener("click", () => {
+      const url = location.href.split("#")[0] + "#" + b.dataset.copy;
+      const done = () => { b.textContent = "הקישור הועתק"; setTimeout(() => b.textContent = "העתקת קישור לשאלה", 1800); };
+      try { navigator.clipboard.writeText(url).then(done, () => { b.textContent = url; }); } catch (e) { b.textContent = url; }
+    }));
+    root.querySelectorAll("[data-thread]").forEach(b => b.addEventListener("click", () => {
+      location.hash = b.dataset.thread;
+    }));
+  }
+
+  function focusCard(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    if (el._openAll) el._openAll();
+    el.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+    el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash");
+  }
+
+  function roomFoot(r) {
+    const i = rooms.indexOf(r), nx = rooms[i + 1];
+    return `
+    <div class="wrap room-foot">
+      <a class="btn btn-ghost" href="#">→ חזרה לדלתות</a>
+      ${nx ? `<a class="btn btn-ghost" href="#${nx.id}">לחדר ${nx.letter}: ${esc(nx.name)} ←</a>` : ""}
+      ${buyBtn()}
+    </div>`;
+  }
+
+  /* ================= חדר א' ================= */
+  function gameHTML(g) {
+    return `
+      <div class="game" id="agrippa">
+        <ol class="chain" id="chain"><li class="claim"><span class="who">טענה</span><p>${esc(g.claim)}</p></li></ol>
+        <div><button class="btn btn-ghost ui" id="ask">איך אתה יודע?</button></div>
+        <div class="exits" id="exits" hidden>${g.exits.map((x, i) => `<button class="chip" data-exit="${i}" aria-pressed="false">${esc(x.label)}</button>`).join("")}</div>
+        <div class="exit-out" id="exitOut" hidden></div>
+        <p class="verdict" id="verdict" hidden>${esc(g.verdict)}</p>
+      </div>`;
+  }
+
+  function sorterHTML(s) {
+    return `
+      <div class="vec" id="sorter">
+        <div class="zone z-inf"><p class="zone-h"><span class="vec-arrow">↑</span> אינפלציה <small>מוסיפה ישים מעל ומעבר לעולם המוכר</small></p><div class="zone-items" id="zInf"></div></div>
+        <div class="zone z-mid">
+          <p class="zone-h">האמצע <small id="midNote">כאן מתחילים. כל פריט צריך להחליט לאן הוא חורג.</small></p>
+          <div class="pool" id="pool">${s.items.map((x, i) => `
+            <div class="tok" data-row="${i}">
+              <span class="it">${esc(x.label)}</span>
+              <span class="tok-btns">
+                <button class="chip" data-sort="inf" aria-label="${esc(x.label)}: אינפלציה">↑ אינפלציה</button>
+                <button class="chip" data-sort="red" aria-label="${esc(x.label)}: רדוקציה">↓ רדוקציה</button>
+              </span>
+              <span class="fb" hidden></span>
+            </div>`).join("")}</div>
+        </div>
+        <div class="zone z-red"><div class="zone-items" id="zRed"></div><p class="zone-h"><span class="vec-arrow">↓</span> רדוקציה <small>מעמידה את העולם המוכר על עקרונות מצומצמים</small></p></div>
+      </div>
+      <p class="score" id="score" aria-live="polite"></p>
+      <p class="verdict" id="sortOut" hidden>${esc(s.outro)}</p>`;
+  }
+  function holidayHTML(h) {
+    return `
+      <div class="game">
+        <p class="holiday-q">${esc(h.question.replace("?", ""))} של <span class="slot" id="slot">...</span>?</p>
+        <div class="chips">${h.items.map((x, i) => `<button class="chip" data-hol="${i}" aria-pressed="false">${esc(x.label)}</button>`).join("")}</div>
+        <p class="answer" id="holAns" aria-live="polite"></p>
+        <p class="verdict" id="holOut" hidden>${esc(h.outro)}</p>
+      </div>`;
+  }
+  function verdictHTML(v) {
+    return `
+      <div class="game">
+        <p class="holiday-q">"${esc(v.claim)}"</p>
+        <div class="chips">${v.options.map((x, i) => `<button class="chip" data-ver="${i}" aria-pressed="false">${esc(x.label)}</button>`).join("")}</div>
+        <p class="answer" id="verAns" aria-live="polite"></p>
+        <p class="verdict" id="ladder" hidden>${esc(v.ladder)}</p>
+      </div>`;
+  }
+
+  function askHTML(c) {
+    return `
+      <div class="game askgame">
+        <div class="chips">${c.options.map((o, i) => `<button class="chip" data-opt="${i}" aria-pressed="false">${esc(o.label)}</button>`).join("")}</div>
+        <p class="answer" aria-live="polite"></p>
+      </div>`;
+  }
+  function wireAsk() {
+    document.querySelectorAll(".askgame").forEach(g => {
+      const c = cardRoom[g.closest(".qcard").id].card, ans = g.querySelector(".answer");
+      g.querySelectorAll("[data-opt]").forEach(b => b.addEventListener("click", () => {
+        g.querySelectorAll("[data-opt]").forEach(x => x.setAttribute("aria-pressed", x === b));
+        const o = c.options[+b.dataset.opt]; ans.textContent = o.text; ans.classList.toggle("odd", !!o.right);
+      }));
+    });
+  }
+
+  /* שער של קוביות פרקים */
+  function gateBox(title, note, inner, gi) {
+    const t = splitTitle(title); note = "";
+    return `
+        <section class="gate-box" data-title="${esc(title)}" ${gi != null ? `id="gate-${gi}" data-gi="${gi}"` : ""}>
+          <h2><small>${esc(t[0])}</small>${esc(t[1])}</h2>
+          ${note ? `<p class="gate-meta">${esc(note)}</p>` : ""}
+          ${inner}
+        </section>`;
+  }
+  function cardsHTML(s, defSteps) {
+    return `<div class="cards">${s.cards.map(c => {
+          const steps = c.steps || defSteps(c);
+          let extra = "";
+          if (c.game === "agrippa") extra += gameHTML(byId.a.game);
+          if (c.game === "holiday") extra += holidayHTML(byId.b.holiday);
+          if (c.game === "verdict") extra += verdictHTML(byId.b.verdictGame);
+          if (c.game === "sorter") extra += sorterHTML(byId.d.sorter);
+          if (c.game === "ask") extra += askHTML(c);
+          if (c.toRoom) extra += `<div><a class="btn btn-ghost" href="#${c.toRoom}">לחדר ${byId[c.toRoom].letter}: ${esc(byId[c.toRoom].name)} ←</a></div>`;
+          const th = c.thread ? threadLink(c.thread, c.play ? "הפתרון בחדר ג'," : "איך זה מתפוגג? חדר ג',")
+            : c.back ? threadLink(c.back, "מהספר:")
+            : c.backRoom ? `<a class="link-btn" href="#${c.backRoom}">מהספר: חדר ${byId[c.backRoom].letter}, ${esc(byId[c.backRoom].name)} ←</a>` : "";
+          return qcard(c, steps, th, extra);
+        }).join("")}</div>`;
+  }
+  function cubeSection(r, s, defSteps) {
+    return `
+      <section class="wrap section">
+        <h2>${esc(s.title)}</h2><p class="note">${esc(s.note)}</p>
+        ${cardsHTML(s, defSteps)}
+      </section>`;
+  }
+
+  function roomA(r) {
+    return `<div class="wrap"><div class="gates-grid">${r.sections.map(s =>
+      gateBox(s.title, s.note, cardsHTML(s, c => [["החתירה אל הקצה", c.reach], ["הקריסה", c.collapse]]))).join("")}</div></div>`;
+  }
+
+  function wireA(r) {
+    const g = r.game; let n = 0;
+    const chain = document.getElementById("chain"); if (!chain) return;
+    document.getElementById("ask").addEventListener("click", e => {
+      if (n >= g.steps.length) return;
+      chain.insertAdjacentHTML("beforeend",
+        `<li class="ask"><span class="who">שאלה</span><p>איך אתה יודע?</p></li>
+         <li class="${n === g.circleAt ? "circle" : ""}"><span class="who">תשובה</span><p>${esc(g.steps[n])}</p></li>`);
+      n++;
+      if (n >= g.steps.length) {
+        e.currentTarget.hidden = true;
+        chain.insertAdjacentHTML("beforeend", `<li class="ask"><span class="who">שאלה</span><p>ואיך אתה יודע את זה? ...מה עכשיו?</p></li>`);
+        document.getElementById("exits").hidden = false;
+      }
+    });
+    document.querySelectorAll("[data-exit]").forEach(b => b.addEventListener("click", () => {
+      document.querySelectorAll("[data-exit]").forEach(x => x.setAttribute("aria-pressed", x === b));
+      const x = g.exits[+b.dataset.exit], out = document.getElementById("exitOut");
+      out.hidden = false; out.innerHTML = `<b>${esc(x.name)}</b><p>${esc(x.text)}</p>`;
+      document.getElementById("verdict").hidden = false;
+    }));
+  }
+
+  /* ================= חדר ב' ================= */
+  function roomB(r) {
+    const s = r.sections[0];
+    const flips = `<div class="flips">${s.flips.map((x, i) => `
+        <button class="flip" data-flip="${i}" aria-pressed="false">
+          <span class="ch">פרק ${esc(x.ch)}</span>
+          <span class="front">${esc(x.front)}</span>
+          <span class="back">${esc(x.back)}</span>
+          <span class="txt">${esc(x.text)}</span>
+          <span class="tap">גע כדי להפוך</span>
+        </button>`).join("")}</div>`;
+    return `<div class="wrap"><div class="gates-grid">
+      ${gateBox(s.title, s.note, cardsHTML(s, () => []))}
+      ${gateBox(r.sections[1].title, r.sections[1].note, cardsHTML(r.sections[1], () => []))}
+    </div></div>`;
+  }
+
+  function wireB(r) {
+    document.querySelectorAll("[data-flip]").forEach(b => b.addEventListener("click", () => {
+      const on = !b.classList.contains("on"); b.classList.toggle("on", on); b.setAttribute("aria-pressed", on);
+    }));
+    const h = r.holiday, seen = new Set();
+    document.querySelectorAll("[data-hol]").forEach(b => b.addEventListener("click", () => {
+      document.querySelectorAll("[data-hol]").forEach(x => x.setAttribute("aria-pressed", x === b));
+      const it = h.items[+b.dataset.hol]; seen.add(b.dataset.hol);
+      document.getElementById("slot").textContent = it.label;
+      const a = document.getElementById("holAns"); a.textContent = it.answer; a.classList.toggle("odd", !!it.odd);
+      if (it.odd) document.getElementById("holOut").hidden = false;
+    }));
+    const v = r.verdictGame;
+    document.querySelectorAll("[data-ver]").forEach(b => b.addEventListener("click", () => {
+      document.querySelectorAll("[data-ver]").forEach(x => x.setAttribute("aria-pressed", x === b));
+      const o = v.options[+b.dataset.ver]; const a = document.getElementById("verAns");
+      a.textContent = o.text; a.classList.toggle("odd", !!o.right);
+      if (o.right) document.getElementById("ladder").hidden = false;
+    }));
+  }
+
+  /* ================= חדר ג' ================= */
+  function roomC(r) {
+    return `
+    <div class="wrap">
+      <div class="gates-grid">${r.gates.map((g, i) => `
+        <section class="gate-box" id="gate-${i}" data-gi="${i}" data-title="${esc(g.title)}">
+          <h2><small>${esc(splitTitle(g.title)[0])}</small>${esc(splitTitle(g.title)[1])}</h2>
+          <p class="gate-meta">פרקים ${esc(g.cards[0].ch)}-${esc(g.cards[g.cards.length - 1].ch)}${g.isNew ? ` · ${esc(g.isNew)}` : ""}</p>
+          <div class="minis cards">${g.cards.map(c => cCardHTML(c)).join("")}</div>
+        </section>`).join("")}
+      </div>
+    </div>
+`;
+  }
+
+  function cCardHTML(c) {
+    return qcard(c, [["מהצד", c.side], ["מהאמצע", c.middle], ["מה נשאר", c.remains]],
+      (c.from || []).map(f => threadLink(f, "במבוך:")).join(""));
+  }
+  function showGate(i) {
+    const el = document.getElementById("gate-" + i);
+    if (el) el.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+  }
+  function wireC() {}
+
+  /* ================= חדר ד' ================= */
+  function roomD(r) {
+    return `<div class="wrap"><div class="gates-grid">${r.sections.map(s => gateBox(s.title, s.note, cardsHTML(s, () => []))).join("")}</div></div>`;
+  }
+
+  function wireD(r) {
+    const s = r.sorter; let placed = 0, tries = 0;
+    document.querySelectorAll(".tok").forEach(tok => {
+      const it = s.items[+tok.dataset.row], fb = tok.querySelector(".fb");
+      tok.querySelectorAll("[data-sort]").forEach(b => b.addEventListener("click", () => {
+        tries++;
+        if (b.dataset.sort !== it.kind) {
+          fb.hidden = false; fb.className = "fb no";
+          fb.textContent = it.kind === "inf"
+            ? "לא בדיוק. האם זה מוסיף משהו מעבר לעולם המוכר?"
+            : "לא בדיוק. האם זה מצמצם את העולם המוכר למשהו אחר?";
+          return;
+        }
+        placed++;
+        tok.querySelector(".tok-btns").remove();
+        fb.hidden = false; fb.className = "fb ok"; fb.textContent = (/[,-]/.test(it.ch) ? "פרקים " : "פרק ") + it.ch;
+        tok.classList.add("placed", it.kind);
+        document.getElementById(it.kind === "inf" ? "zInf" : "zRed").appendChild(tok);
+        document.getElementById("score").textContent = placed < s.items.length
+          ? `${placed} מתוך ${s.items.length} במקומם`
+          : `כל תשעת הפריטים במקומם${tries === s.items.length ? ", בלי טעות אחת" : ""}.`;
+        if (placed === s.items.length) {
+          document.getElementById("midNote").textContent = "השמש זורחת בבוקר. האמצע נשאר בדיוק כפי שהיה.";
+          document.querySelector(".z-mid").classList.add("clear");
+          document.getElementById("sortOut").hidden = false;
+        }
+      }));
+    });
+  }
+
+  /* ================= ניתוב ================= */
+  function roomM(r) { return `<div class="wrap"><div class="gates-grid one">${gateBox(r.title, "", cardsHTML({ cards: r.cards }, c => c.game === "ask" ? [] : [["השאלה", c.intro]]))}</div></div>`; }
+  function wireM() { wireA(byId.a); wireB(byId.b); wireD(byId.d); wireAsk(); }
+  const BUILD = { a: [roomA, wireA], b: [roomB, wireB], c: [roomC, wireC], d: [roomD, wireD], m: [roomM, wireM] };
+
+  function renderRoom(r, focusId) {
+    document.title = `${r.name} · ${S.title}`;
+    visited.add(r.id); store.set("visited", [...visited]);
+    const sheet = "";
+    const y = window.scrollY;
+    app.innerHTML = `<div class="home home-strip">${homeTopHTML(r.id)}</div><div class="room" data-room="${r.id}">${railHTML(r)}<div class="room-main">${topbar(r)}${head(r)}${BUILD[r.id][0](r)}${roomFoot(r)}</div>${sheet}</div>${filmFloatHTML()}${filmPopHTML()}`;
+    window.scrollTo(0, Math.min(y, document.querySelector(".room").offsetTop));
+    wireDoors(); wireFilm(); placeBeam(r.id); setTimeout(() => placeBeam(r.id), 400);
+    window.onresize = () => placeBeam(r.id);
+    document.body.style.background = getComputedStyle(app.firstElementChild).backgroundColor;
+    wireCards(app); BUILD[r.id][1](r); buildRail(r);
+    if (focusId) setTimeout(() => focusCard(focusId), 60);
+    else setTimeout(scrollToRoom, 30);
+  }
+
+  let current = null;
+  function route() {
+    const h = decodeURIComponent(location.hash.slice(1));
+    if (h === "dsort") { location.replace("#g4"); return; }
+    if (byId[h]) { current = h; renderRoom(byId[h]); return; }
+    if (cardRoom[h]) {
+      const t = cardRoom[h];
+      if (current === t.room) focusCard(h);
+      else { current = t.room; renderRoom(byId[t.room], h); }
+      return;
+    }
+    current = null; window.onscroll = null; document.body.style.background = ""; renderHome(); window.scrollTo(0, 0);
+  }
+  window.addEventListener("hashchange", route);
+  route();
+})();
+</script>
+
+</body></html>
